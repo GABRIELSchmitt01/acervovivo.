@@ -144,17 +144,19 @@ Além das funções do sistema, também precisamos considerar alguns aspectos de
 
 A organização dos dados, a simplicidade da interface e a realização de testes estão de acordo com o Plano de Atividades. Os demais pontos são aspectos que serão considerados durante o desenvolvimento.
 
-## 12. Tecnologias e arquitetura
+## 12. Tecnologia e arquitetura
 
-O Plano de Atividades atual descreve um sistema web e prevê o uso de FastAPI e SQLAlchemy no backend.
+A proposta atual do produto é desenvolver um aplicativo em Flutter. Uma versão web não faz parte do escopo neste momento; é apenas uma possibilidade futura, ainda sem confirmação.
 
-A ideia de desenvolver a interface em Flutter ainda precisa ser confirmada com o professor orientador. Até essa confirmação, a plataforma e a arquitetura final do sistema continuam pendentes.
+Existe uma diferença entre essa proposta e o Formulário 02 da FASEC, que descreve um sistema web e prevê o uso de FastAPI e SQLAlchemy no backend. Essa diferença precisa ser conversada com o professor orientador, para confirmar se a proposta Flutter pode ser usada ou se será necessário ajustar o plano aprovado.
+
+Por enquanto, o planejamento do produto ficará voltado ao aplicativo Flutter. Não está previsto iniciar uma API ou desenvolver uma versão web nesta etapa.
 
 ## 13. Pontos para confirmar e validar
 
 Antes de avançar para a implementação, será necessário:
 
-- Confirmar com o professor se o uso de Flutter é compatível com o projeto aprovado.
+- Confirmar com o professor se o aplicativo Flutter pode substituir o sistema web descrito no Formulário 02, ou se o plano precisará ser ajustado.
 - Revisar os perfis de usuário e as permissões de cada um.
 - Confirmar quais campos serão usados no cadastro de usuários e quais serão obrigatórios.
 - Decidir como os usuários serão identificados para acessar o próprio histórico.
