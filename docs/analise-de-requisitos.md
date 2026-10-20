@@ -40,7 +40,7 @@ Na primeira versão, o sistema deverá permitir o gerenciamento dos livros e dos
 
 A proposta considera dois tipos de usuários: bibliotecário e usuário comum. O bibliotecário ficará responsável pelas operações de gerenciamento. O usuário comum poderá consultar os livros e visualizar o próprio histórico de empréstimos.
 
-Essas permissões ainda precisam ser detalhadas. O escopo também poderá ser ajustado conforme as orientações do professor orientador e a validação do projeto.
+As permissões e algumas regras de funcionamento ainda precisam ser detalhadas. O escopo também poderá ser ajustado conforme as orientações do professor orientador e a validação do projeto.
 
 ## 6. Usuários do sistema
 
@@ -55,6 +55,20 @@ O usuário comum poderá consultar os livros cadastrados e visualizar seu própr
 ### 6.3 Cadastro de usuários
 
 Na proposta inicial, somente o bibliotecário poderá cadastrar novos usuários. A forma de identificar cada pessoa e controlar o acesso às funções será definida durante o desenvolvimento.
+
+### 6.4 Campos propostos para o cadastro de usuários
+
+Para começar a modelar o cadastro, foram listados estes campos como sugestão:
+
+| Campo | Finalidade | Situação |
+|---|---|---|
+| Nome completo | Identificar a pessoa cadastrada. | Proposto |
+| E-mail | Guardar um contato e avaliar seu uso na identificação do usuário. | Proposto |
+| Telefone | Ter um contato adicional, caso seja necessário. | Proposto; confirmar se será usado |
+| Código ou matrícula da biblioteca | Diferenciar os usuários por um código interno, se for útil. | Proposto; confirmar necessidade |
+| Situação do cadastro | Indicar se o cadastro está ativo ou inativo. | Proposto; confirmar necessidade |
+
+Esta lista não é uma exigência definida pela FASEC. Também ainda não foi decidido quais campos serão obrigatórios, como serão validados e quais serão realmente usados na versão inicial do sistema.
 
 ## 7. Requisitos funcionais
 
@@ -71,8 +85,9 @@ Os requisitos funcionais descrevem as ações que o sistema deverá permitir.
 - **RF09 — Gerenciamento pelo bibliotecário:** disponibilizar ao bibliotecário as funções de gerenciamento de livros, usuários, empréstimos e devoluções.
 - **RF10 — Consulta pelo usuário comum:** permitir que o usuário comum consulte os livros e seu próprio histórico de empréstimos.
 - **RF11 — Limitar o cadastro de usuários:** permitir o cadastro de novos usuários somente ao bibliotecário.
+- **RF12 — Restringir o acesso ao histórico:** antes de mostrar um histórico pessoal, o sistema deverá identificar o usuário e limitar a consulta aos empréstimos associados a ele. A forma de identificação ainda precisa ser escolhida.
 
-Os requisitos RF01 a RF08 detalham funcionalidades que já aparecem no Plano de Atividades. Os requisitos RF09 a RF11 registram decisões iniciais para o projeto e ainda podem ser ajustados quando as permissões forem definidas com mais detalhes.
+Os requisitos RF01 a RF08 detalham funcionalidades que aparecem no Plano de Atividades. Os requisitos RF09 a RF12 detalham decisões iniciais do projeto e precisam ser revistos junto com as regras de acesso.
 
 ## 8. Dados do cadastro de livros
 
@@ -93,7 +108,7 @@ Esses campos são uma proposta inicial do projeto, não uma lista de campos exig
 
 ## 9. Dados dos empréstimos e das devoluções
 
-Para registrar um empréstimo, será necessário relacionar o livro emprestado ao usuário e guardar as datas importantes. A proposta inicial considera:
+Para registrar um empréstimo, será necessário relacionar o livro ao usuário e guardar as datas importantes. A proposta inicial considera:
 
 - Identificação do livro.
 - Identificação do usuário.
@@ -101,9 +116,23 @@ Para registrar um empréstimo, será necessário relacionar o livro emprestado a
 - Data prevista para a devolução, se essa regra for adotada.
 - Data em que a devolução foi realizada.
 
-A lista final de campos dependerá das regras definidas para o sistema. Também será necessário pensar em como controlar a quantidade de exemplares disponíveis, já que alguns livros poderão estar emprestados.
+A lista final de campos dependerá das regras definidas para o sistema. Também será necessário controlar a quantidade de exemplares disponíveis, já que alguns livros poderão estar emprestados.
 
-## 10. Requisitos não funcionais e características gerais
+## 10. Regras de negócio propostas
+
+As regras abaixo são sugestões para tornar o sistema coerente. Ainda precisam ser confirmadas e ajustadas antes da implementação.
+
+- **RB01 — Responsável pelos registros:** na proposta inicial, o bibliotecário registra os empréstimos e as devoluções.
+- **RB02 — Disponibilidade:** o sistema não deverá permitir um empréstimo quando não houver exemplar disponível.
+- **RB03 — Dados do empréstimo:** cada empréstimo deverá estar associado a um livro, a um usuário e à data em que ocorreu.
+- **RB04 — Prazo:** caso seja adotada uma data prevista de devolução, o prazo deverá ser definido antes de implementar a regra.
+- **RB05 — Devolução:** ao registrar uma devolução, o sistema deverá guardar a data efetiva e atualizar a disponibilidade do livro.
+- **RB06 — Histórico pessoal:** o usuário comum poderá consultar apenas o próprio histórico de empréstimos.
+- **RB07 — Exclusão de livros:** precisamos decidir como tratar a tentativa de excluir um livro que tenha empréstimos em andamento. Uma opção é bloquear a exclusão até que esses empréstimos sejam encerrados.
+
+Ainda não foram definidos o prazo de empréstimo, o limite de livros por usuário, as renovações ou as consequências de uma devolução atrasada. Não vamos criar esses limites sem antes decidir se farão parte do projeto.
+
+## 11. Requisitos não funcionais e características gerais
 
 Além das funções do sistema, também precisamos considerar alguns aspectos de organização e uso:
 
@@ -114,20 +143,6 @@ Além das funções do sistema, também precisamos considerar alguns aspectos de
 - **RNF05 — Testes:** as principais funções deverão ser testadas, e os problemas encontrados deverão ser corrigidos.
 
 A organização dos dados, a simplicidade da interface e a realização de testes estão de acordo com o Plano de Atividades. Os demais pontos são aspectos que serão considerados durante o desenvolvimento.
-
-## 11. Regras de negócio que ainda precisam ser definidas
-
-Algumas regras ainda não estão decididas. Entre elas:
-
-- Quais campos do cadastro de livros serão obrigatórios.
-- Como validar o ISBN, o ano de publicação e a quantidade de exemplares.
-- O que fazer quando houver tentativa de excluir um livro que tenha exemplares emprestados.
-- Como calcular e atualizar a disponibilidade dos exemplares.
-- Quais serão os prazos e as condições para empréstimos e devoluções.
-- Como será feito o acesso de cada tipo de usuário.
-- Como garantir que o usuário comum veja somente o próprio histórico.
-
-Esses pontos serão detalhados conforme o andamento do projeto. Eles não estão sendo tratados como exigências já aprovadas pela faculdade.
 
 ## 12. Tecnologias e arquitetura
 
@@ -141,9 +156,11 @@ Antes de avançar para a implementação, será necessário:
 
 - Confirmar com o professor se o uso de Flutter é compatível com o projeto aprovado.
 - Revisar os perfis de usuário e as permissões de cada um.
-- Definir as regras de empréstimo e devolução.
+- Confirmar quais campos serão usados no cadastro de usuários e quais serão obrigatórios.
+- Decidir como os usuários serão identificados para acessar o próprio histórico.
+- Definir o prazo e as condições de empréstimo e devolução.
+- Decidir como tratar a exclusão de livros que tenham empréstimos em andamento.
 - Decidir as validações dos cadastros.
-- Definir como serão identificados os usuários e controlados os acessos.
 - Atualizar este documento caso o plano precise de mudanças.
 
 ## 14. Resultado esperado
@@ -154,6 +171,6 @@ Para considerar o produto concluído, será necessário desenvolver e testar as 
 
 ## 15. Considerações finais
 
-Este documento é a primeira versão da análise de requisitos do AcervoVivo. Ele será atualizado conforme as regras forem definidas, as dúvidas forem esclarecidas com o professor e o sistema for desenvolvido.
+Este documento é a versão inicial da análise de requisitos do AcervoVivo. Ele será atualizado conforme as regras forem definidas, as dúvidas forem esclarecidas com o professor e o sistema for desenvolvido.
 
-O texto reúne as funcionalidades previstas no Plano de Atividades e as decisões iniciais tomadas para o projeto. Caso seja necessário mudar algum ponto importante, a alteração deverá ser alinhada com o professor orientador.
+O texto reúne as funcionalidades previstas no Plano de Atividades e as decisões iniciais tomadas para o projeto. Os campos e as regras que ainda são sugestões estão identificados como tal para que possam ser revisados antes da implementação. Caso seja necessário mudar algum ponto importante, a alteração deverá ser alinhada com o professor orientador.
