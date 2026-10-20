@@ -14,7 +14,10 @@ Essas funcionalidades ainda fazem parte do planejamento e serão desenvolvidas e
 
 ## Documentação
 
-A documentação está na pasta [docs](docs/). A primeira versão pode ser consultada em [Análise de Requisitos](docs/analise-de-requisitos.md).
+A documentação está na pasta [docs](docs/):
+
+- [Análise de Requisitos](docs/analise-de-requisitos.md)
+- [Modelagem Inicial do Banco de Dados](docs/modelagem-banco-de-dados.md)
 
 ## Tecnologias
 
@@ -24,10 +27,11 @@ O Plano de Atividades prevê um sistema web com FastAPI e SQLAlchemy no backend.
 
 - [x] Criar o repositório do projeto.
 - [x] Registrar a primeira versão da análise de requisitos.
+- [x] Criar uma proposta inicial de modelagem do banco de dados.
 - [ ] Confirmar com o professor o escopo e a tecnologia.
-- [ ] Detalhar os dados dos usuários e as regras de empréstimo.
-- [ ] Modelar o banco de dados.
+- [ ] Validar os campos, relacionamentos e regras de negócio.
+- [ ] Criar o banco de dados na tecnologia aprovada.
 - [ ] Desenvolver as funcionalidades.
 - [ ] Testar o sistema e corrigir os problemas encontrados.
 
-> Este repositório está em fase inicial. As funcionalidades listadas são planejadas e ainda não significam que o sistema esteja pronto.
+> Este repositório está em fase inicial. A documentação registra o planejamento; as funcionalidades ainda precisam ser implementadas e testadas.
