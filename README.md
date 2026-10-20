@@ -19,16 +19,18 @@ A documentação está na pasta [docs](docs/):
 - [Análise de Requisitos](docs/analise-de-requisitos.md)
 - [Modelagem Inicial do Banco de Dados](docs/modelagem-banco-de-dados.md)
 
-## Tecnologias
+## Tecnologia e escopo atual
 
-O Plano de Atividades prevê um sistema web com FastAPI e SQLAlchemy no backend. A possibilidade de usar Flutter na interface ainda será confirmada com o professor orientador antes de definir a arquitetura final.
+A proposta atual é desenvolver um aplicativo em Flutter. Uma versão web não faz parte do escopo neste momento; é apenas uma ideia para o futuro, ainda sem confirmação.
+
+Há uma diferença entre essa proposta e o Formulário 02 da FASEC, que descreve um sistema web e cita FastAPI e SQLAlchemy. Essa diferença precisa ser confirmada com o professor orientador antes da entrega final. Por enquanto, o planejamento do produto será voltado ao aplicativo Flutter, sem iniciar uma API ou uma versão web.
 
 ## Próximas etapas
 
 - [x] Criar o repositório do projeto.
 - [x] Registrar a primeira versão da análise de requisitos.
 - [x] Criar uma proposta inicial de modelagem do banco de dados.
-- [ ] Confirmar com o professor o escopo e a tecnologia.
+- [ ] Confirmar com o professor a adequação da proposta Flutter ao Formulário 02.
 - [ ] Validar os campos, relacionamentos e regras de negócio.
 - [ ] Criar o banco de dados na tecnologia aprovada.
 - [ ] Desenvolver as funcionalidades.
