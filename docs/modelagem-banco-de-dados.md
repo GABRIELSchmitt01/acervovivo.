@@ -142,9 +142,3 @@ Antes de criar o banco de dados definitivo, precisamos confirmar ou decidir:
 4. Qual será o prazo dos empréstimos e como será registrada a data prevista de devolução.
 5. Se o sistema controlará apenas a quantidade de exemplares ou cada exemplar individualmente.
 6. Como lidar com a exclusão de livros que já possuem histórico de empréstimos.
-
-## 7. Próximas atividades
-
-Depois de validar esta proposta, o próximo passo será revisar os campos e relacionamentos e, em seguida, preparar o modelo físico do banco de dados na tecnologia escolhida. Só depois disso faz sentido criar as tabelas e começar a ligar o banco às funcionalidades do sistema.
-
-**Observação sobre o estágio:** este documento registra o trabalho de modelagem realizado, mas não substitui o registro oficial das horas. As horas devem ser anotadas de acordo com o tempo efetivamente dedicado à atividade, conforme as orientações da FASEC.
