@@ -11,169 +11,149 @@
 
 ## 1. Introdução
 
-Este documento apresenta a análise inicial dos requisitos do AcervoVivo, um projeto de sistema destinado a auxiliar no gerenciamento das informações de uma biblioteca. A proposta busca organizar os dados dos livros e dos usuários, além de facilitar o registro e o acompanhamento dos empréstimos e das devoluções.
+Este documento reúne os requisitos iniciais do AcervoVivo, um projeto pensado para ajudar na organização de uma biblioteca. A ideia é ter um lugar onde seja possível consultar os livros, manter os dados dos usuários e registrar empréstimos e devoluções.
 
-A análise de requisitos servirá como base para o planejamento, a modelagem do banco de dados, o desenvolvimento e os testes do produto computacional.
+Este levantamento será usado como ponto de partida para planejar o sistema, organizar o banco de dados, desenvolver as funcionalidades e testar o que for criado.
 
 ## 2. Problema identificado
 
-A organização dos livros, dos usuários e dos empréstimos pode se tornar difícil quando as informações não estão centralizadas em um sistema. Essa situação pode dificultar a consulta aos dados e o acompanhamento dos livros emprestados e devolvidos.
+Controlar livros, usuários e empréstimos pode ser difícil quando as informações ficam espalhadas ou não estão bem organizadas. Isso pode deixar mais demorada a consulta aos dados e dificultar o acompanhamento dos livros que foram emprestados ou devolvidos.
 
-Diante desse problema, propõe-se desenvolver um sistema que reúna essas informações em um único ambiente, facilitando as atividades de gerenciamento da biblioteca.
+Por esse motivo, a proposta é criar um sistema que reúna essas informações e facilite o trabalho de gerenciamento da biblioteca.
 
 ## 3. Objetivo geral
 
-Desenvolver um sistema de controle de biblioteca que facilite o gerenciamento dos livros, dos usuários, dos empréstimos e das devoluções, mantendo as informações organizadas em um banco de dados.
+Desenvolver um sistema para organizar os livros e os usuários de uma biblioteca e registrar os empréstimos e as devoluções em um banco de dados.
 
 ## 4. Objetivos específicos
 
-- Permitir o cadastro, a consulta, a alteração e a exclusão de livros.
-- Permitir o cadastro e a consulta de usuários.
-- Registrar os empréstimos e as devoluções de livros.
-- Organizar as informações em um banco de dados.
-- Disponibilizar uma interface simples e adequada à utilização do sistema.
-- Realizar testes das principais funcionalidades e corrigir problemas identificados.
+- Cadastrar, consultar, alterar e excluir livros.
+- Cadastrar e consultar usuários.
+- Registrar empréstimos e devoluções.
+- Manter as informações organizadas em um banco de dados.
+- Criar uma interface simples, adequada ao uso do sistema.
+- Testar as principais funcionalidades e corrigir os problemas encontrados.
 
 ## 5. Escopo do sistema
 
-A proposta inicial contempla o gerenciamento dos livros e dos usuários, o registro dos empréstimos e das devoluções e a consulta às informações cadastradas.
+Na primeira versão, o sistema deverá permitir o gerenciamento dos livros e dos usuários, além do registro de empréstimos e devoluções e da consulta às informações cadastradas.
 
-O sistema deverá considerar dois perfis de utilização: bibliotecário e usuário comum. As permissões específicas de cada perfil serão detalhadas durante a especificação dos requisitos.
+A proposta considera dois tipos de usuários: bibliotecário e usuário comum. O bibliotecário ficará responsável pelas operações de gerenciamento. O usuário comum poderá consultar os livros e visualizar o próprio histórico de empréstimos.
 
-O escopo poderá ser ajustado conforme as orientações do professor orientador e a validação da proposta de projeto.
+Essas permissões ainda precisam ser detalhadas. O escopo também poderá ser ajustado conforme as orientações do professor orientador e a validação do projeto.
 
 ## 6. Usuários do sistema
 
 ### 6.1 Bibliotecário
 
-O bibliotecário será responsável pelo gerenciamento dos livros, dos usuários e dos registros de empréstimos e devoluções.
-
-As operações previstas para esse perfil incluem cadastrar, consultar, alterar e excluir livros, além de cadastrar e consultar usuários e registrar empréstimos e devoluções.
+O bibliotecário será responsável por administrar os livros, os usuários e os registros de empréstimos e devoluções. A proposta inicial é que ele possa cadastrar, consultar, alterar e excluir livros, além de cadastrar e consultar usuários e registrar empréstimos e devoluções.
 
 ### 6.2 Usuário comum
 
-O usuário comum poderá consultar os livros cadastrados e visualizar seu próprio histórico de empréstimos.
-
-O acesso ao histórico deverá respeitar as permissões definidas para esse perfil.
+O usuário comum poderá consultar os livros cadastrados e visualizar seu próprio histórico de empréstimos. O sistema deverá limitar essa consulta aos dados do próprio usuário.
 
 ### 6.3 Cadastro de usuários
 
-A proposta inicial estabelece que o cadastro de novos usuários será realizado somente pelo bibliotecário.
-
-O mecanismo de identificação dos usuários e o controle de acesso aos recursos serão definidos durante o detalhamento da solução.
+Na proposta inicial, somente o bibliotecário poderá cadastrar novos usuários. A forma de identificar cada pessoa e controlar o acesso às funções será definida durante o desenvolvimento.
 
 ## 7. Requisitos funcionais
 
-Os requisitos funcionais descrevem as operações que o sistema deverá disponibilizar.
+Os requisitos funcionais descrevem as ações que o sistema deverá permitir.
 
-**RF01 — Cadastro de livros:** o sistema deverá permitir o cadastro de livros.
+- **RF01 — Cadastrar livros:** permitir o cadastro de livros.
+- **RF02 — Consultar livros:** permitir a consulta aos livros cadastrados.
+- **RF03 — Alterar livros:** permitir a atualização dos dados de um livro.
+- **RF04 — Excluir livros:** permitir a exclusão de livros, respeitando as regras de integridade que forem definidas.
+- **RF05 — Cadastrar usuários:** permitir que o bibliotecário cadastre novos usuários.
+- **RF06 — Consultar usuários:** permitir que o bibliotecário consulte os usuários cadastrados.
+- **RF07 — Registrar empréstimos:** permitir o registro de um empréstimo, relacionando o livro, o usuário e as datas correspondentes.
+- **RF08 — Registrar devoluções:** permitir o registro da devolução de um livro emprestado.
+- **RF09 — Gerenciamento pelo bibliotecário:** disponibilizar ao bibliotecário as funções de gerenciamento de livros, usuários, empréstimos e devoluções.
+- **RF10 — Consulta pelo usuário comum:** permitir que o usuário comum consulte os livros e seu próprio histórico de empréstimos.
+- **RF11 — Limitar o cadastro de usuários:** permitir o cadastro de novos usuários somente ao bibliotecário.
 
-**RF02 — Consulta de livros:** o sistema deverá permitir a consulta aos livros cadastrados.
-
-**RF03 — Alteração de livros:** o sistema deverá permitir a atualização dos dados de livros existentes.
-
-**RF04 — Exclusão de livros:** o sistema deverá permitir a exclusão de livros, respeitando as regras de integridade que forem definidas.
-
-**RF05 — Cadastro de usuários:** o sistema deverá permitir que o bibliotecário cadastre novos usuários.
-
-**RF06 — Consulta de usuários:** o sistema deverá permitir que o bibliotecário consulte os usuários cadastrados.
-
-**RF07 — Registro de empréstimos:** o sistema deverá permitir o registro de empréstimos, associando o livro, o usuário e as datas correspondentes.
-
-**RF08 — Registro de devoluções:** o sistema deverá permitir o registro das devoluções dos livros emprestados.
-
-**RF09 — Gerenciamento pelo bibliotecário:** o sistema deverá disponibilizar ao bibliotecário as operações administrativas previstas para livros, usuários, empréstimos e devoluções.
-
-**RF10 — Consulta pelo usuário comum:** o sistema deverá permitir que o usuário comum consulte os livros e seu próprio histórico de empréstimos.
-
-**RF11 — Restrição do cadastro:** o sistema deverá restringir o cadastro de novos usuários ao perfil de bibliotecário.
-
-Os requisitos RF01 a RF08 detalham funcionalidades previstas no Plano de Atividades. Os requisitos RF09 a RF11 representam decisões preliminares de detalhamento do projeto e deverão ser revisados durante a definição das permissões e das regras de acesso.
+Os requisitos RF01 a RF08 detalham funcionalidades que já aparecem no Plano de Atividades. Os requisitos RF09 a RF11 registram decisões iniciais para o projeto e ainda podem ser ajustados quando as permissões forem definidas com mais detalhes.
 
 ## 8. Dados do cadastro de livros
 
-O cadastro de livros terá como finalidade armazenar as informações necessárias à identificação e à organização das obras da biblioteca.
+O cadastro de livros deverá guardar informações que ajudem a identificar e organizar as obras. Para a primeira versão, foram propostos os seguintes campos:
 
-| Campo | Descrição |
+| Campo | Para que serve |
 |---|---|
-| Título do livro | Nome da obra. |
-| Autor | Nome do autor ou dos autores. |
-| ISBN | Identificador associado à edição publicada. |
-| Categoria ou gênero | Classificação temática ou literária. |
-| Ano de publicação | Ano de publicação da edição. |
-| Quantidade de exemplares | Número de exemplares registrados para a obra. |
-| Editora | Nome da editora responsável pela publicação. |
-| Descrição ou sinopse | Resumo ou apresentação do conteúdo. |
+| Título do livro | Informar o nome da obra. |
+| Autor | Informar o nome do autor ou dos autores. |
+| ISBN | Registrar o identificador da edição publicada, quando houver. |
+| Categoria ou gênero | Classificar o livro por assunto ou gênero literário. |
+| Ano de publicação | Informar o ano em que a edição foi publicada. |
+| Quantidade de exemplares | Registrar quantos exemplares da obra a biblioteca possui. |
+| Editora | Informar a editora responsável pela publicação. |
+| Descrição ou sinopse | Apresentar um resumo do conteúdo do livro. |
 
-Esses campos constituem uma proposta inicial do projeto. A obrigatoriedade de preenchimento e as regras de validação ainda serão definidas.
+Esses campos são uma proposta inicial do projeto, não uma lista de campos exigida diretamente pela faculdade. Ainda será necessário definir quais serão obrigatórios e quais validações serão aplicadas.
 
 ## 9. Dados dos empréstimos e das devoluções
 
-O registro de empréstimos deverá associar o livro ao usuário responsável e armazenar as datas necessárias ao acompanhamento da operação.
-
-Inicialmente, deverão ser considerados:
+Para registrar um empréstimo, será necessário relacionar o livro emprestado ao usuário e guardar as datas importantes. A proposta inicial considera:
 
 - Identificação do livro.
 - Identificação do usuário.
 - Data do empréstimo.
-- Data prevista para devolução, caso seja adotada essa regra.
-- Data efetiva da devolução, quando registrada.
+- Data prevista para a devolução, se essa regra for adotada.
+- Data em que a devolução foi realizada.
 
-A definição final dos campos dependerá das regras de negócio estabelecidas para o sistema.
-
-Também deverá ser avaliada a relação entre a quantidade de exemplares cadastrados e os exemplares disponíveis para empréstimo, evitando inconsistências no controle da biblioteca.
+A lista final de campos dependerá das regras definidas para o sistema. Também será necessário pensar em como controlar a quantidade de exemplares disponíveis, já que alguns livros poderão estar emprestados.
 
 ## 10. Requisitos não funcionais e características gerais
 
-**RNF01 — Organização dos dados:** as informações deverão ser organizadas em um banco de dados.
+Além das funções do sistema, também precisamos considerar alguns aspectos de organização e uso:
 
-**RNF02 — Interface:** a interface deverá ser simples e adequada à utilização das funcionalidades previstas.
+- **RNF01 — Organização dos dados:** as informações deverão ficar organizadas em um banco de dados.
+- **RNF02 — Interface:** a interface deverá ser simples e fácil de entender.
+- **RNF03 — Adaptação da interface:** deverá ser avaliada a adaptação da interface aos diferentes tamanhos de tela, de acordo com a plataforma aprovada para o projeto.
+- **RNF04 — Integridade das informações:** deverão ser definidas regras para evitar dados inconsistentes nos cadastros e nos registros de empréstimos e devoluções.
+- **RNF05 — Testes:** as principais funções deverão ser testadas, e os problemas encontrados deverão ser corrigidos.
 
-**RNF03 — Responsividade:** deverá ser considerada a adaptação da interface aos diferentes tamanhos de tela, conforme a plataforma definida para o projeto.
+A organização dos dados, a simplicidade da interface e a realização de testes estão de acordo com o Plano de Atividades. Os demais pontos são aspectos que serão considerados durante o desenvolvimento.
 
-**RNF04 — Integridade das informações:** deverão ser consideradas regras para evitar inconsistências nos cadastros e nos registros de empréstimos e devoluções.
+## 11. Regras de negócio que ainda precisam ser definidas
 
-**RNF05 — Testes:** as principais funcionalidades deverão ser testadas, e os problemas identificados deverão ser corrigidos.
-
-Os requisitos RNF01, RNF02 e RNF05 estão alinhados às características descritas no Plano de Atividades. Os demais detalham aspectos a serem considerados no desenvolvimento.
-
-## 11. Regras de negócio a definir
-
-As seguintes regras ainda precisam ser especificadas:
+Algumas regras ainda não estão decididas. Entre elas:
 
 - Quais campos do cadastro de livros serão obrigatórios.
-- Como serão validados o ISBN, o ano de publicação e a quantidade de exemplares.
-- Como serão tratados livros com exemplares emprestados no momento de uma tentativa de exclusão.
-- Como será controlada a disponibilidade dos exemplares.
-- Quais serão os prazos e as condições de empréstimo e devolução.
-- Como serão identificados os usuários e aplicadas as permissões de acesso.
-- Como será garantido que o usuário comum visualize somente o próprio histórico.
+- Como validar o ISBN, o ano de publicação e a quantidade de exemplares.
+- O que fazer quando houver tentativa de excluir um livro que tenha exemplares emprestados.
+- Como calcular e atualizar a disponibilidade dos exemplares.
+- Quais serão os prazos e as condições para empréstimos e devoluções.
+- Como será feito o acesso de cada tipo de usuário.
+- Como garantir que o usuário comum veja somente o próprio histórico.
 
-Essas regras constituem pontos de análise que deverão ser definidos conforme o escopo do sistema, e não exigências já aprovadas pela faculdade.
+Esses pontos serão detalhados conforme o andamento do projeto. Eles não estão sendo tratados como exigências já aprovadas pela faculdade.
 
 ## 12. Tecnologias e arquitetura
 
-O Plano de Atividades da proposta aprovada descreve um sistema web e prevê o uso de FastAPI e SQLAlchemy no desenvolvimento do backend.
+O Plano de Atividades atual descreve um sistema web e prevê o uso de FastAPI e SQLAlchemy no backend.
 
-A possibilidade de desenvolver a interface como aplicativo Flutter ainda precisa ser confirmada com o professor orientador. Até essa confirmação, a arquitetura definitiva e a escolha final da plataforma permanecem pendentes.
+A ideia de desenvolver a interface em Flutter ainda precisa ser confirmada com o professor orientador. Até essa confirmação, a plataforma e a arquitetura final do sistema continuam pendentes.
 
-## 13. Pendências para validação
+## 13. Pontos para confirmar e validar
 
-- Confirmar com o professor orientador se a proposta de interface em Flutter é compatível com o projeto aprovado.
-- Validar o escopo e os perfis de utilização.
-- Definir as regras de negócio para empréstimos e devoluções.
-- Definir as regras de validação dos cadastros.
-- Detalhar o mecanismo de autenticação e as permissões de acesso.
-- Atualizar a documentação caso sejam necessárias alterações relevantes no planejamento.
+Antes de avançar para a implementação, será necessário:
 
-## 14. Resultados esperados
+- Confirmar com o professor se o uso de Flutter é compatível com o projeto aprovado.
+- Revisar os perfis de usuário e as permissões de cada um.
+- Definir as regras de empréstimo e devolução.
+- Decidir as validações dos cadastros.
+- Definir como serão identificados os usuários e controlados os acessos.
+- Atualizar este documento caso o plano precise de mudanças.
 
-Espera-se que o projeto resulte em um sistema funcional para o gerenciamento de livros, usuários, empréstimos e devoluções, com informações organizadas em banco de dados e uma interface adequada à plataforma aprovada.
+## 14. Resultado esperado
 
-A conclusão do produto dependerá da implementação e dos testes das funcionalidades previstas, além da documentação e dos registros exigidos para o estágio.
+Ao final do projeto, espera-se ter um sistema que ajude a organizar os livros e os usuários da biblioteca e que permita registrar empréstimos e devoluções. As informações deverão estar organizadas em um banco de dados e a interface deverá ser adequada à plataforma aprovada.
+
+Para considerar o produto concluído, será necessário desenvolver e testar as funcionalidades previstas, além de manter a documentação e os registros solicitados para o estágio.
 
 ## 15. Considerações finais
 
-Esta análise de requisitos constitui uma versão inicial do planejamento do AcervoVivo. O documento deverá ser atualizado à medida que as regras de negócio forem definidas, as decisões técnicas forem validadas e o sistema for desenvolvido.
+Este documento é a primeira versão da análise de requisitos do AcervoVivo. Ele será atualizado conforme as regras forem definidas, as dúvidas forem esclarecidas com o professor e o sistema for desenvolvido.
 
-As funcionalidades e os campos apresentados refletem o Plano de Atividades e as decisões preliminares do projeto. Alterações relevantes deverão ser alinhadas com o professor orientador, conforme as orientações da disciplina de Estágio Supervisionado Obrigatório.
+O texto reúne as funcionalidades previstas no Plano de Atividades e as decisões iniciais tomadas para o projeto. Caso seja necessário mudar algum ponto importante, a alteração deverá ser alinhada com o professor orientador.
