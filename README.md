@@ -1,34 +1,33 @@
 # AcervoVivo — Sistema de Controle de Biblioteca
 
-Projeto acadêmico desenvolvido no contexto do Estágio Supervisionado Obrigatório do curso de Análise e Desenvolvimento de Sistemas da FASEC.
+O AcervoVivo é um projeto acadêmico do Estágio Supervisionado Obrigatório do curso de Análise e Desenvolvimento de Sistemas da FASEC. A proposta é criar um sistema para ajudar a organizar livros, usuários, empréstimos e devoluções de uma biblioteca.
 
-## Objetivo
+## O que o sistema pretende fazer
 
-Organizar as informações de uma biblioteca e apoiar o gerenciamento de livros, usuários, empréstimos e devoluções.
+- Cadastrar, consultar, alterar e excluir livros.
+- Cadastrar e consultar usuários.
+- Registrar empréstimos e devoluções.
+- Permitir que o usuário comum consulte os livros e seu próprio histórico de empréstimos.
+- Manter os dados organizados em um banco de dados.
 
-## Funcionalidades previstas
-
-- Cadastro, consulta, alteração e exclusão de livros.
-- Cadastro e consulta de usuários.
-- Registro de empréstimos e devoluções.
-- Consulta de livros e do próprio histórico pelo usuário comum, conforme os requisitos preliminares.
-- Organização dos dados em banco de dados.
+Essas funcionalidades ainda fazem parte do planejamento e serão desenvolvidas e testadas durante o projeto.
 
 ## Documentação
 
-A documentação do projeto está na pasta [docs](docs/), começando pela [Análise de Requisitos](docs/analise-de-requisitos.md).
+A documentação está na pasta [docs](docs/). A primeira versão pode ser consultada em [Análise de Requisitos](docs/analise-de-requisitos.md).
 
 ## Tecnologias
 
-O Plano de Atividades atualmente prevê um sistema web com FastAPI e SQLAlchemy no backend. A possibilidade de utilizar Flutter para a interface ainda precisa ser confirmada com o professor orientador antes de definir a arquitetura final.
+O Plano de Atividades prevê um sistema web com FastAPI e SQLAlchemy no backend. A possibilidade de usar Flutter na interface ainda será confirmada com o professor orientador antes de definir a arquitetura final.
 
-## Situação atual
+## Próximas etapas
 
-- [x] Repositório criado.
-- [x] Primeira versão da análise de requisitos registrada.
-- [ ] Validar escopo e tecnologia com o professor orientador.
-- [ ] Detalhar regras de negócio e dados de usuários.
+- [x] Criar o repositório do projeto.
+- [x] Registrar a primeira versão da análise de requisitos.
+- [ ] Confirmar com o professor o escopo e a tecnologia.
+- [ ] Detalhar os dados dos usuários e as regras de empréstimo.
 - [ ] Modelar o banco de dados.
-- [ ] Implementar e testar as funcionalidades.
+- [ ] Desenvolver as funcionalidades.
+- [ ] Testar o sistema e corrigir os problemas encontrados.
 
-> Este documento descreve o planejamento inicial. As funcionalidades ainda precisam ser implementadas e testadas; não se afirma que o sistema já esteja concluído.
+> Este repositório está em fase inicial. As funcionalidades listadas são planejadas e ainda não significam que o sistema esteja pronto.
