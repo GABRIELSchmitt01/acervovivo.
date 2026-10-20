@@ -168,9 +168,3 @@ Antes de avançar para a implementação, será necessário:
 Ao final do projeto, espera-se ter um sistema que ajude a organizar os livros e os usuários da biblioteca e que permita registrar empréstimos e devoluções. As informações deverão estar organizadas em um banco de dados e a interface deverá ser adequada à plataforma aprovada.
 
 Para considerar o produto concluído, será necessário desenvolver e testar as funcionalidades previstas, além de manter a documentação e os registros solicitados para o estágio.
-
-## 15. Considerações finais
-
-Este documento é a versão inicial da análise de requisitos do AcervoVivo. Ele será atualizado conforme as regras forem definidas, as dúvidas forem esclarecidas com o professor e o sistema for desenvolvido.
-
-O texto reúne as funcionalidades previstas no Plano de Atividades e as decisões iniciais tomadas para o projeto. Os campos e as regras que ainda são sugestões estão identificados como tal para que possam ser revisados antes da implementação. Caso seja necessário mudar algum ponto importante, a alteração deverá ser alinhada com o professor orientador.
