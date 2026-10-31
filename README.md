@@ -26,6 +26,10 @@ A proposta atual é desenvolver um aplicativo em Flutter. Uma versão web não f
 
 Há uma diferença entre essa proposta e o Formulário 02 da FASEC, que descreve um sistema web e cita FastAPI e SQLAlchemy. Essa diferença precisa ser confirmada com o professor orientador antes da entrega final. Por enquanto, o planejamento do produto será voltado ao aplicativo Flutter, sem iniciar uma API ou uma versão web.
 
+## Acompanhamento do projeto
+
+O andamento das atividades está organizado no [Kanban do AcervoVivo](KANBAN.md), com tarefas concluídas, em andamento, pendentes e itens que ainda precisam de avaliação.
+
 ## Próximas etapas
 
 - [x] Criar o repositório do projeto.
