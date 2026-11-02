@@ -46,6 +46,7 @@ _Nenhuma tarefa foi marcada como em andamento neste momento._
 
 - [ ] [#15 — Testar funcionalidades e regras de integridade](https://github.com/GABRIELSchmitt01/acervovivo./issues/15)
 - [ ] [#16 — Atualizar documentos e registrar evidências finais](https://github.com/GABRIELSchmitt01/acervovivo./issues/16)
+- [ ] [#18 — Revisar e validar a especificação funcional v0.1](https://github.com/GABRIELSchmitt01/acervovivo./issues/18)
 
 ## A avaliar (não faz parte do escopo aprovado)
 
