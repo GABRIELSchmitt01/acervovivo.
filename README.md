@@ -19,6 +19,8 @@ A documentação está na pasta [docs](docs/):
 - [Análise de Requisitos](docs/analise-de-requisitos.md)
 - [Modelagem Inicial do Banco de Dados](docs/modelagem-banco-de-dados.md)
 - [Planejamento do Projeto](docs/planejamento-do-projeto.md)
+- [Especificação funcional e fluxos de uso](docs/especificacao-funcional-e-fluxos.md)
+- [Registro de atividade — 02/11/2026](docs/registro-de-atividade-2026-11-02.md)
 
 ## Tecnologia e escopo atual
 
