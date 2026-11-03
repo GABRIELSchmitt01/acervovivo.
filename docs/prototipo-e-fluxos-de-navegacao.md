@@ -8,7 +8,7 @@
 
 ## 1. Objetivo desta etapa
 
-Dar continuidade à primeira tela do AcervoVivo, organizando os principais caminhos de navegação e desenhando as telas necessárias para demonstrar como o usuário comum e o bibliotecário poderão utilizar o aplicativo.
+Dar continuidade à primeira tela do AcervoVivo, organizando os principais caminhos de navegação e desenhando as telas necessárias para demonstrar como o usuário comum e o bibliotecário poderão utilizar o aplicativo. O protótipo considera bibliotecas em geral, com foco principal em escolas, faculdades e universidades, sem restringir o sistema a esses locais. As telas representam o controle de livros físicos, não a leitura ou o download de PDFs.
 
 O protótipo serve como referência visual para as próximas etapas de implementação. Os elementos desenhados ainda não executam operações reais, não consultam banco de dados e não registram empréstimos.
 
