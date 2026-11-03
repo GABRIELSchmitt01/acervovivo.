@@ -19,7 +19,7 @@ A finalidade é orientar a próxima etapa do projeto: finalizar o protótipo das
 
 ## 2. Objetivo do produto
 
-O AcervoVivo pretende apoiar a rotina de bibliotecas de escolas e instituições de ensino, reunindo em um só lugar os dados dos livros, dos usuários e dos empréstimos.
+O AcervoVivo pretende apoiar a rotina de bibliotecas em geral, reunindo em um só lugar os dados dos livros físicos, dos usuários e dos empréstimos. O foco principal de utilização será em bibliotecas de escolas, faculdades e universidades, mas o sistema não será exclusivo desses ambientes. O mesmo conjunto de funções poderá atender outras bibliotecas que precisem organizar seu acervo e controlar a circulação de livros.
 
 O sistema deverá ajudar a responder perguntas comuns da rotina da biblioteca:
 
@@ -31,13 +31,13 @@ O sistema deverá ajudar a responder perguntas comuns da rotina da biblioteca:
 - Qual é a data prevista para a devolução, caso a biblioteca adote um prazo?
 - Quais empréstimos já foram encerrados?
 
-O aplicativo não tem como objetivo disponibilizar arquivos PDF ou substituir a leitura física por uma biblioteca digital. A proposta documentada atualmente é organizar o acervo e controlar empréstimos de livros da biblioteca.
+O aplicativo não tem como objetivo disponibilizar arquivos PDF, oferecer leitura digital ou substituir a biblioteca por uma plataforma de e-books. A proposta atual é organizar o acervo físico e controlar a consulta, os empréstimos e as devoluções de livros. Em escolas e instituições de ensino superior, o usuário comum poderá representar alunos, professores e outros frequentadores; em outras bibliotecas, poderá representar leitores ou associados.
 
 ## 3. Pessoas que utilizarão o sistema
 
 ### 3.1 Bibliotecário
 
-É a pessoa responsável pelo gerenciamento da biblioteca no aplicativo. Na proposta atual, poderá:
+É a pessoa responsável pelo gerenciamento da biblioteca no aplicativo. Esse papel poderá existir em bibliotecas escolares, universitárias, públicas, comunitárias ou de outros tipos. Na proposta atual, poderá:
 
 - cadastrar, consultar, alterar e excluir livros, respeitando as regras de integridade;
 - cadastrar e consultar usuários;
@@ -48,7 +48,7 @@ O aplicativo não tem como objetivo disponibilizar arquivos PDF ou substituir a 
 
 ### 3.2 Usuário comum
 
-É o aluno ou frequentador da biblioteca. Na proposta atual, poderá:
+É a pessoa que consulta e utiliza o acervo. No cenário escolar e universitário, poderá ser aluno, professor ou outro frequentador autorizado; em outros ambientes, poderá ser leitor ou associado. Na proposta atual, poderá:
 
 - consultar os livros cadastrados;
 - pesquisar livros;
