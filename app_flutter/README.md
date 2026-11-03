@@ -10,6 +10,7 @@ Esta pasta contém o primeiro incremento de interface do AcervoVivo em Flutter.
 - Pesquisa por título ou autor no catálogo.
 - Filtros de categoria.
 - Visualização demonstrativa dos detalhes de um livro.
+- Dois testes de widget preparados para verificar a abertura do app e a navegação até o catálogo.
 
 ## O que ainda não está implementado
 
