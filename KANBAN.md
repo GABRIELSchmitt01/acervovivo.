@@ -17,6 +17,8 @@
 - [x] Registrar a atividade de prototipação de 03/11/2026 — [Registro de atividade](docs/registro-de-atividade-2026-11-03.md)
 - [x] Elaborar a especificação funcional v0.1, com perfis, telas, fluxos, regras, validações e cenários de teste — [Documento](docs/especificacao-funcional-e-fluxos.md)
 - [x] Registrar a atividade documental de 02/11/2026 e preparar campo para apontamento do tempo real — [Registro de atividade](docs/registro-de-atividade-2026-11-02.md)
+- [x] Preparar o primeiro esqueleto de código Flutter, com navegação, tela inicial, catálogo, busca e filtros — [Código](app_flutter/) e [guia de execução](docs/inicio-do-desenvolvimento-flutter.md)
+- [x] Registrar a primeira atividade de implementação Flutter — [Registro de atividade](docs/registro-de-atividade-primeiro-flutter-2026-11-03.md)
 
 ## Em andamento
 
