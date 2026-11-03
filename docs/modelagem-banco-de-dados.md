@@ -8,7 +8,7 @@
 
 ## 1. Objetivo
 
-Este documento apresenta uma primeira proposta de organização dos dados do AcervoVivo. A ideia é identificar quais informações o sistema precisa guardar e como os livros, os usuários e os empréstimos se relacionam.
+Este documento apresenta uma primeira proposta de organização dos dados do AcervoVivo. A ideia é identificar quais informações o sistema precisa guardar e como os livros físicos do acervo, os usuários e os empréstimos se relacionam. A proposta poderá atender bibliotecas em geral, com foco principal nos contextos escolares e de ensino superior.
 
 Esta é uma modelagem inicial. Os campos e as regras ainda podem ser ajustados depois da revisão dos requisitos e da confirmação da plataforma com o professor orientador.
 
@@ -18,7 +18,7 @@ Para começar, propomos três entidades: **Livro**, **Usuário** e **Empréstimo
 
 ### 2.1 Livro
 
-Guarda os dados de cada obra cadastrada na biblioteca.
+Guarda os dados de cada obra física cadastrada no acervo da biblioteca. Nesta modelagem inicial, a quantidade de exemplares é registrada no cadastro da obra; a decisão de controlar cada cópia individualmente permanece pendente.
 
 | Campo proposto | Finalidade | Observação |
 |---|---|---|
