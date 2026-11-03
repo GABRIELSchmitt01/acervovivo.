@@ -59,14 +59,6 @@ abstract final class AppTheme {
           borderSide: const BorderSide(color: AppColors.forest, width: 1.5),
         ),
       ),
-      cardTheme: CardThemeData(
-        color: AppColors.card,
-        elevation: 0,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(18),
-          side: const BorderSide(color: AppColors.border),
-        ),
-      ),
     );
   }
 }
