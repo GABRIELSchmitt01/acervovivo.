@@ -2,7 +2,7 @@
 
 > Quadro de acompanhamento do projeto. Atualize o status dos cartões conforme o trabalho realmente avançar.
 >
-> **Escopo atual documentado:** aplicativo Flutter para controle de biblioteca. A confirmação em relação ao Formulário 02 ainda está pendente.
+> **Público e cenário de uso:** sistema para bibliotecas em geral, com foco prioritário em bibliotecas de escolas, faculdades e universidades. A primeira versão considera o controle de livros físicos, usuários, empréstimos e devoluções; não é uma plataforma de PDFs. A confirmação da proposta Flutter em relação ao Formulário 02 ainda está pendente.
 >
 > **Como usar:** cada cartão pendente está vinculado a uma issue do GitHub. Ao iniciar uma tarefa, mova-a para **Em andamento** neste arquivo. Ao concluir, mova-a para **Concluído** e feche a issue correspondente. Não marque tarefas como concluídas sem implementação ou validação.
 
