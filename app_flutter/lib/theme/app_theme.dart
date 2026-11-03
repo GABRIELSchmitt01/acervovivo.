@@ -32,12 +32,6 @@ abstract final class AppTheme {
       colorScheme: scheme,
       scaffoldBackgroundColor: AppColors.canvas,
       fontFamily: 'Roboto',
-      appBarTheme: const AppBarTheme(
-        backgroundColor: AppColors.canvas,
-        foregroundColor: AppColors.deep,
-        elevation: 0,
-        centerTitle: false,
-      ),
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor: AppColors.card,
