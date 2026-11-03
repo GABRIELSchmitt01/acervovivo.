@@ -1,6 +1,6 @@
 # AcervoVivo — Sistema de Controle de Biblioteca
 
-O AcervoVivo é um projeto acadêmico do Estágio Supervisionado Obrigatório do curso de Análise e Desenvolvimento de Sistemas da FASEC. A proposta é criar um sistema para ajudar a organizar livros, usuários, empréstimos e devoluções de uma biblioteca.
+O AcervoVivo é um projeto acadêmico do Estágio Supervisionado Obrigatório do curso de Análise e Desenvolvimento de Sistemas da FASEC. A proposta é desenvolver um aplicativo para organizar o acervo de livros físicos, os usuários, os empréstimos e as devoluções de bibliotecas. O sistema poderá ser utilizado por bibliotecas em geral, tendo como foco principal os contextos de escolas, faculdades e universidades, onde alunos, professores e outros frequentadores consultam e utilizam o acervo.
 
 ## O que o sistema pretende fazer
 
@@ -10,7 +10,7 @@ O AcervoVivo é um projeto acadêmico do Estágio Supervisionado Obrigatório do
 - Permitir que o usuário comum consulte os livros e seu próprio histórico de empréstimos.
 - Manter os dados organizados em um banco de dados.
 
-Essas funcionalidades ainda fazem parte do planejamento e serão desenvolvidas e testadas durante o projeto.
+O foco inicial é o gerenciamento de livros físicos e de sua circulação dentro da biblioteca. O AcervoVivo não está sendo planejado como uma plataforma de leitura ou download de livros em PDF. Essas funcionalidades ainda fazem parte do planejamento e serão desenvolvidas e testadas durante o projeto.
 
 ## Documentação
 
