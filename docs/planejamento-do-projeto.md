@@ -14,7 +14,9 @@ Este planejamento é inicial e poderá ser ajustado depois da revisão dos requi
 
 ## 2. Escopo atual
 
-Neste momento, a proposta é desenvolver **um aplicativo em Flutter** para auxiliar no controle de uma biblioteca.
+Neste momento, a proposta é desenvolver **um aplicativo em Flutter** para auxiliar no gerenciamento de bibliotecas em geral. O foco principal de utilização será em bibliotecas de escolas, faculdades e universidades, mas o sistema não será exclusivo dessas instituições.
+
+O cenário de referência considera o controle de livros físicos: o bibliotecário organiza o acervo e registra empréstimos e devoluções, enquanto alunos, professores ou outros frequentadores consultam os livros e seu próprio histórico. A proposta não é criar uma plataforma para leitura ou download de livros em PDF.
 
 As funcionalidades planejadas são:
 
@@ -51,13 +53,13 @@ Deverá ter acesso às funções de gerenciamento de livros e usuários, além d
 
 ### Usuário comum
 
-Deverá poder consultar os livros e o próprio histórico de empréstimos.
+Deverá poder consultar os livros e o próprio histórico de empréstimos. Em escolas e instituições de ensino superior, esse perfil poderá representar alunos, professores e outros frequentadores autorizados. Em outros tipos de biblioteca, poderá representar leitores ou associados.
 
 A forma como o aplicativo identificará cada perfil, fará o login e protegerá o histórico ainda precisa ser especificada. Não será implementado um mecanismo de autenticação antes de definir essa parte.
 
 ## 5. Telas que poderão fazer parte da primeira versão
 
-A lista abaixo é uma proposta inicial para organizar o desenho das telas. A quantidade e o conteúdo poderão mudar durante a prototipação.
+A lista abaixo é uma proposta inicial para organizar o desenho das telas. A quantidade e o conteúdo poderão mudar durante a prototipação. As telas consideram o gerenciamento de livros físicos em bibliotecas de diferentes tipos, com os cenários escolares e universitários como principal referência.
 
 1. **Tela de acesso ou identificação:** entrada no aplicativo e identificação do perfil, conforme a solução que for definida.
 2. **Tela inicial:** atalhos para as principais funções disponíveis ao perfil.
