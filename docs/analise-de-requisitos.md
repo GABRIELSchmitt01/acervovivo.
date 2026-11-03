@@ -11,7 +11,7 @@
 
 ## 1. Introdução
 
-Este documento reúne os requisitos iniciais do AcervoVivo, um projeto pensado para ajudar na organização de uma biblioteca. A ideia é ter um lugar onde seja possível consultar os livros, manter os dados dos usuários e registrar empréstimos e devoluções.
+Este documento reúne os requisitos iniciais do AcervoVivo, um projeto pensado para ajudar na organização de bibliotecas em geral. O foco principal de utilização será em bibliotecas de escolas, faculdades e universidades, mas a proposta não fica limitada a esses ambientes. A ideia é ter um aplicativo em que seja possível consultar o acervo de livros físicos, manter os dados dos usuários e registrar empréstimos e devoluções.
 
 Este levantamento será usado como ponto de partida para planejar o sistema, organizar o banco de dados, desenvolver as funcionalidades e testar o que for criado.
 
@@ -19,11 +19,11 @@ Este levantamento será usado como ponto de partida para planejar o sistema, org
 
 Controlar livros, usuários e empréstimos pode ser difícil quando as informações ficam espalhadas ou não estão bem organizadas. Isso pode deixar mais demorada a consulta aos dados e dificultar o acompanhamento dos livros que foram emprestados ou devolvidos.
 
-Por esse motivo, a proposta é criar um sistema que reúna essas informações e facilite o trabalho de gerenciamento da biblioteca.
+Por esse motivo, a proposta é criar um sistema que reúna essas informações e facilite o trabalho de gerenciamento da biblioteca. O cenário de referência considera principalmente uma biblioteca escolar ou universitária, em que o bibliotecário organiza o acervo e os alunos, professores ou outros frequentadores consultam e utilizam os livros.
 
 ## 3. Objetivo geral
 
-Desenvolver um sistema para organizar os livros e os usuários de uma biblioteca e registrar os empréstimos e as devoluções em um banco de dados.
+Desenvolver um sistema para organizar o acervo de livros físicos e os usuários de bibliotecas, registrar empréstimos e devoluções e facilitar a consulta às obras, com foco principal em bibliotecas escolares e de ensino superior, sem restringir o uso a esses ambientes.
 
 ## 4. Objetivos específicos
 
@@ -36,7 +36,7 @@ Desenvolver um sistema para organizar os livros e os usuários de uma biblioteca
 
 ## 5. Escopo do sistema
 
-Na primeira versão, o sistema deverá permitir o gerenciamento dos livros e dos usuários, além do registro de empréstimos e devoluções e da consulta às informações cadastradas.
+Na primeira versão, o sistema deverá permitir o gerenciamento do acervo de livros físicos e dos usuários, além do registro de empréstimos e devoluções e da consulta às informações cadastradas. O sistema poderá ser utilizado por diferentes tipos de biblioteca, com prioridade para os contextos escolares e de ensino superior, sem ser exclusivo dessas instituições.
 
 A proposta considera dois tipos de usuários: bibliotecário e usuário comum. O bibliotecário ficará responsável pelas operações de gerenciamento. O usuário comum poderá consultar os livros e visualizar o próprio histórico de empréstimos.
 
@@ -50,7 +50,7 @@ O bibliotecário será responsável por administrar os livros, os usuários e os
 
 ### 6.2 Usuário comum
 
-O usuário comum poderá consultar os livros cadastrados e visualizar seu próprio histórico de empréstimos. O sistema deverá limitar essa consulta aos dados do próprio usuário.
+O usuário comum poderá consultar os livros cadastrados e visualizar seu próprio histórico de empréstimos. Em uma biblioteca escolar ou universitária, esse perfil poderá representar um aluno, professor ou outro frequentador autorizado; em outros tipos de biblioteca, poderá representar o leitor ou associado. O sistema deverá limitar essa consulta aos dados do próprio usuário.
 
 ### 6.3 Cadastro de usuários
 
@@ -91,7 +91,7 @@ Os requisitos RF01 a RF08 detalham funcionalidades que aparecem no Plano de Ativ
 
 ## 8. Dados do cadastro de livros
 
-O cadastro de livros deverá guardar informações que ajudem a identificar e organizar as obras. Para a primeira versão, foram propostos os seguintes campos:
+O cadastro deverá guardar informações que ajudem a identificar e organizar as obras físicas que fazem parte do acervo da biblioteca. Para a primeira versão, foram propostos os seguintes campos:
 
 | Campo | Para que serve |
 |---|---|
