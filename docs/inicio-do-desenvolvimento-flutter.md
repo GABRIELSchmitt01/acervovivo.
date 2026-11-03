@@ -48,25 +48,32 @@ Essas funções dependem de decisões sobre o cenário de uso e a arquitetura. E
 É necessário ter o Flutter SDK e um dispositivo ou emulador configurado.
 
 1. Abra um terminal na pasta `app_flutter`.
-2. Gere as pastas nativas para Android e Windows:
+2. Confira se o Flutter está instalado:
 
    ```bash
-   flutter create --platforms=android,windows .
+   flutter --version
+   flutter doctor -v
    ```
 
-3. Baixe as dependências:
+3. Gere as pastas nativas para Android e Windows:
+
+   ```bash
+   flutter create --platforms=android,windows --project-name acervovivo .
+   ```
+
+4. Baixe as dependências:
 
    ```bash
    flutter pub get
    ```
 
-4. Confira os dispositivos:
+5. Confira os dispositivos:
 
    ```bash
    flutter devices
    ```
 
-5. Execute no Windows:
+6. Execute no Windows:
 
    ```bash
    flutter run -d windows
@@ -74,7 +81,7 @@ Essas funções dependem de decisões sobre o cenário de uso e a arquitetura. E
 
    Ou execute no dispositivo Android/emulador usando o identificador mostrado por `flutter devices`.
 
-6. Verifique o código:
+7. Verifique o código:
 
    ```bash
    flutter analyze
