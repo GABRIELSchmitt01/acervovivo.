@@ -14,6 +14,7 @@
 - [x] Elaborar o planejamento inicial do aplicativo — [docs/planejamento-do-projeto.md](docs/planejamento-do-projeto.md)
 - [x] Criar a primeira tela inicial editável no Figma, com filtros e cartões de livros reutilizáveis — [Abrir tela no Figma](https://www.figma.com/design/eanAee98wCyRSHrNTa1q9C?node-id=2-30)
 - [x] Criar primeira rodada do fluxo e das telas complementares no Figma (nove telas, dois fluxos e componentes reutilizáveis) — [Abrir protótipos](https://www.figma.com/design/eanAee98wCyRSHrNTa1q9C?node-id=14-31) e [documentação](docs/prototipo-e-fluxos-de-navegacao.md)
+- [x] Registrar a atividade de prototipação de 03/11/2026 — [Registro de atividade](docs/registro-de-atividade-2026-11-03.md)
 - [x] Elaborar a especificação funcional v0.1, com perfis, telas, fluxos, regras, validações e cenários de teste — [Documento](docs/especificacao-funcional-e-fluxos.md)
 - [x] Registrar a atividade documental de 02/11/2026 e preparar campo para apontamento do tempo real — [Registro de atividade](docs/registro-de-atividade-2026-11-02.md)
 
