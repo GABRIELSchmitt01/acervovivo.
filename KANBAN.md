@@ -22,7 +22,7 @@
 
 ## Em andamento
 
-- [ ] [#9 — Criar projeto e estrutura inicial do Flutter](https://github.com/GABRIELSchmitt01/acervovivo./issues/9) — em andamento: esqueleto de código registrado; falta gerar as plataformas, executar e validar no computador.
+- [ ] [#9 — Preparar e executar a primeira versão do aplicativo](https://github.com/GABRIELSchmitt01/acervovivo./issues/9) — em andamento: esqueleto de código registrado; falta gerar as plataformas, executar e validar no computador.
 
 ## A fazer
 
