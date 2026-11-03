@@ -22,6 +22,7 @@ A documentação está na pasta [docs](docs/):
 - [Especificação funcional e fluxos de uso](docs/especificacao-funcional-e-fluxos.md)
 - [Registro de atividade — 02/11/2026](docs/registro-de-atividade-2026-11-02.md)
 - [Protótipo e fluxos de navegação — 03/11/2026](docs/prototipo-e-fluxos-de-navegacao.md)
+- [Registro de atividade — 03/11/2026](docs/registro-de-atividade-2026-11-03.md)
 
 ## Tecnologia e escopo atual
 
