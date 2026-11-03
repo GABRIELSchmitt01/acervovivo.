@@ -22,6 +22,7 @@ Iniciar a transformação dos protótipos do AcervoVivo em código Flutter, prep
 - Implementação do catálogo com busca por título e autor e filtros por categoria.
 - Implementação da visualização demonstrativa de detalhes do livro.
 - Criação de componentes reutilizáveis para capas, cartões e linhas de livros.
+- Preparação de dois testes de widget para verificar a inicialização do aplicativo e a navegação até o catálogo.
 - Criação de telas iniciais de histórico e perfil, indicando que esses recursos ainda não possuem dados reais.
 - Registro de instruções para gerar as plataformas Android e Windows e executar o projeto localmente.
 
