@@ -97,7 +97,7 @@ class BookCover extends StatelessWidget {
               width: width * 0.42,
               height: 3,
               decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.9),
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(3),
               ),
             ),
