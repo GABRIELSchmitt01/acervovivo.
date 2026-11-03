@@ -20,7 +20,7 @@
 
 ## Em andamento
 
-_Nenhuma tarefa foi marcada como em andamento neste momento._
+- [ ] [#9 — Criar projeto e estrutura inicial do Flutter](https://github.com/GABRIELSchmitt01/acervovivo./issues/9) — em andamento: esqueleto de código registrado; falta gerar as plataformas, executar e validar no computador.
 
 ## A fazer
 
@@ -36,7 +36,6 @@ _Nenhuma tarefa foi marcada como em andamento neste momento._
 
 ### Design e construção do aplicativo
 
-- [ ] [#9 — Criar projeto e estrutura inicial do Flutter](https://github.com/GABRIELSchmitt01/acervovivo./issues/9)
 - [ ] [#10 — Implementar persistência dos dados](https://github.com/GABRIELSchmitt01/acervovivo./issues/10)
 - [ ] [#11 — Implementar cadastro, consulta, edição e exclusão de livros](https://github.com/GABRIELSchmitt01/acervovivo./issues/11)
 - [ ] [#12 — Implementar cadastro e consulta de usuários](https://github.com/GABRIELSchmitt01/acervovivo./issues/12)
