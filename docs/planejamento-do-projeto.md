@@ -68,7 +68,7 @@ A lista abaixo é uma proposta inicial para organizar o desenho das telas. A qua
 7. **Devolução de livro:** localização de um empréstimo em aberto e registro da devolução.
 8. **Histórico de empréstimos:** consulta ao histórico do próprio usuário e, se necessário, visualização administrativa pelo bibliotecário.
 
-Estas telas são sugestões para o planejamento; não significa que o protótipo já esteja feito ou que o professor tenha exigido o uso do Figma.
+**Andamento do protótipo em 03/11/2026:** foi criada uma primeira rodada de prototipação no Figma, com uma página complementar contendo o fluxo do usuário comum, o fluxo do bibliotecário e nove telas editáveis: seleção de perfil (conceitual), catálogo, detalhes do livro, painel do bibliotecário, cadastro de livro, cadastro de usuário, novo empréstimo, empréstimos em aberto/devolução e histórico. Também foram criados componentes reutilizáveis para campos, botões e linhas do catálogo. A [documentação do protótipo e dos fluxos](prototipo-e-fluxos-de-navegacao.md) registra os detalhes. A tela de seleção de perfil é apenas conceitual: login e permissões ainda precisam ser definidos. Os dados exibidos são demonstrativos; nenhuma função está conectada a banco de dados.
 
 ## 6. Organização sugerida do projeto
 
@@ -90,7 +90,7 @@ A estrutura final será definida quando o projeto Flutter for criado. Se for ado
 1. Revisar os requisitos e a proposta de modelagem.
 2. Definir como os usuários serão identificados e quais permissões cada perfil terá.
 3. Confirmar se o armazenamento local é adequado à primeira versão.
-4. Desenhar o fluxo de navegação e os primeiros wireframes das telas.
+4. Desenhar o fluxo de navegação e os primeiros wireframes das telas — **primeira rodada concluída em 03/11/2026; revisão e validação continuam pendentes.**
 5. Criar o projeto Flutter e organizar a estrutura inicial.
 6. Implementar o armazenamento e as operações de livros.
 7. Implementar o cadastro e a consulta de usuários.
@@ -115,9 +115,9 @@ Esses critérios são metas de trabalho para o projeto e ainda poderão ser ajus
 
 - Definir o mecanismo de identificação e acesso dos dois perfis.
 - Confirmar se o armazenamento local atende à necessidade do projeto.
-- Definir se o Figma ou outra ferramenta de prototipação será necessária.
+- Revisar e validar a primeira rodada de telas e fluxos no Figma com base nas decisões finais de perfis e regras.
 - Confirmar com o professor a diferença entre a proposta atual em Flutter e o sistema web descrito no Formulário 02.
 
 ## 10. Próxima atividade
 
-A próxima atividade de trabalho será desenhar o fluxo de navegação e esboçar as telas principais do aplicativo. Esse desenho ajudará a conferir se o caminho entre as funções está claro antes de começar a montar as telas em Flutter.
+A próxima atividade será revisar o protótipo e resolver as decisões de escopo, acesso, armazenamento e regras de empréstimo. A proposta Flutter ainda precisa ser confirmada em relação ao Formulário 02. Depois dessas validações, o projeto poderá ser criado em Flutter e a implementação poderá começar com uma base alinhada aos requisitos.
