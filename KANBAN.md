@@ -26,7 +26,7 @@
 ## Em andamento
 
 - [ ] [#9 — Preparar e executar a primeira versão do aplicativo](https://github.com/GABRIELSchmitt01/acervovivo./issues/9)  
-  A estrutura inicial está no repositório. Falta executar no computador: verificar Flutter, gerar as plataformas Android/Windows, obter dependências, analisar, testar e abrir o app. Ainda não foi confirmado que compila ou roda localmente.
+  **Validação automática aprovada no GitHub Actions:** dependências instaladas, `flutter analyze` sem problemas e dois testes de widget aprovados ([execução](https://github.com/GABRIELSchmitt01/acervovivo./actions/runs/42975551993)). Ainda falta validar a execução nativa no Windows/Android do computador local.
 
 ## A fazer — decisões prioritárias
 
@@ -71,6 +71,9 @@ A reserva é apenas uma possibilidade discutida. Não deve entrar na primeira ve
 6. Testar, corrigir e fechar a documentação para entrega (Issues #15, #16 e #18).
 
 ## Referências
+
+- [Roteiro de validação local Flutter](docs/validacao-local-flutter.md)
+- [Workflow de análise e testes](https://github.com/GABRIELSchmitt01/acervovivo./blob/main/.github/workflows/flutter.yml)
 
 - [README](README.md)
 - [Análise de requisitos](docs/analise-de-requisitos.md)
