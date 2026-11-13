@@ -136,7 +136,7 @@ Essas são propostas técnicas iniciais, não regras já aprovadas pelo professo
 
 Antes de criar o banco de dados definitivo, precisamos confirmar ou decidir:
 
-1. Confirmar com o professor se a proposta de aplicativo Flutter está de acordo com o Formulário 02, que descreve um sistema web com FastAPI e SQLAlchemy. A versão web é apenas uma ideia futura e não faz parte do escopo atual.
+1. Definir se o armazenamento será local ou centralizado e como ocorrerá a sincronização entre dispositivos, após a autorização do uso de Flutter registrada em `docs/registro-de-decisao-flutter-2026-11-13.md`.
 2. Como funcionará o login e como serão diferenciados os perfis.
 3. Se o e-mail será único e se o código ou matrícula será necessário.
 4. Qual será o prazo dos empréstimos e como será registrada a data prevista de devolução.
