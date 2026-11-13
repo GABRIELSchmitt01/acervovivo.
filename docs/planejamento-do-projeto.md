@@ -33,7 +33,7 @@ Uma versão web é apenas uma possibilidade futura e não faz parte do escopo at
 
 | Tecnologia | Uso planejado | Situação |
 |---|---|---|
-| Flutter | Construir a interface do aplicativo. | Escolhida como foco atual. |
+| Flutter | Construir a interface e a aplicação. | Aprovada pelo professor orientador, conforme confirmação comunicada pelo estudante em 13/11/2026. |
 | Dart | Linguagem usada no desenvolvimento Flutter. | Prevista com Flutter. |
 | SQLite com o pacote sqflite | Possível opção para armazenar os dados localmente no dispositivo. | Proposta a confirmar antes da implementação. |
 | GitHub | Guardar código e documentação do projeto. | Já está sendo usado. |
@@ -118,7 +118,7 @@ Esses critérios são metas de trabalho para o projeto e ainda poderão ser ajus
 - Definir o mecanismo de identificação e acesso dos dois perfis.
 - Confirmar se o armazenamento local atende à necessidade do projeto.
 - Revisar e validar a primeira rodada de telas e fluxos no Figma com base nas decisões finais de perfis e regras.
-- Confirmar com o professor a diferença entre a proposta atual em Flutter e o sistema web descrito no Formulário 02.
+- Definir o armazenamento e a necessidade de sincronização entre dispositivos (ver Issue #7).
 
 ## 10. Próxima atividade
 
