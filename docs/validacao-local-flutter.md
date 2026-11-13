@@ -116,6 +116,6 @@ Não registre horas estimadas como horas realizadas. Informe apenas o tempo que 
 
 ## Limites conhecidos desta versão
 
-A base atual usa livros fictícios/de demonstração. Ainda não há banco de dados, login real, sincronização, cadastro persistente de livros e usuários, empréstimos ou devoluções funcionais. A definição da arquitetura de armazenamento depende da Issue #7, e a confirmação formal da tecnologia em relação ao Formulário 02 depende da Issue #1.
+A base atual usa livros fictícios/de demonstração. Ainda não há banco de dados, login real, sincronização, cadastro persistente de livros e usuários, empréstimos ou devoluções funcionais. A autorização para utilizar Flutter foi comunicada pelo estudante em 13/11/2026 e registrada em `docs/registro-de-decisao-flutter-2026-11-13.md`. A definição da arquitetura de armazenamento depende da Issue #7.
 
 **Validação registrada em 13/11/2026:** o estudante confirmou que a versão Flutter abriu no Chrome e que a navegação principal e os filtros por categoria funcionaram. A autorização para utilizar Flutter foi comunicada pelo estudante e registrada em `docs/registro-de-decisao-flutter-2026-11-13.md`. **Próximo passo:** definir armazenamento e sincronização (Issue #7), além de avançar nas telas do protótipo (Issue #19). A execução nativa em Windows/Android permanece pendente.
