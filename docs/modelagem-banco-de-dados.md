@@ -10,7 +10,7 @@
 
 Este documento apresenta uma primeira proposta de organização dos dados do AcervoVivo. A ideia é identificar quais informações o sistema precisa guardar e como os livros físicos do acervo, os usuários e os empréstimos se relacionam. A proposta poderá atender bibliotecas em geral, com foco principal nos contextos escolares e de ensino superior.
 
-Esta é uma modelagem inicial para bibliotecas em geral, com foco prioritário em escolas, faculdades e universidades. O controle considera livros físicos e sua circulação. Os campos e as regras ainda podem ser ajustados depois da revisão dos requisitos e da confirmação da plataforma com o professor orientador.
+Esta é uma modelagem inicial para bibliotecas em geral, com foco prioritário em escolas, faculdades e universidades. O controle considera livros físicos e sua circulação. O uso de Flutter foi autorizado pelo professor, conforme registro de 13/11/2026. Os campos, regras e a arquitetura de armazenamento ainda podem ser ajustados depois da revisão dos requisitos e da decisão sobre sincronização.
 
 ## 2. Entidades principais
 
