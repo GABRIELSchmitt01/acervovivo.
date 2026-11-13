@@ -24,16 +24,17 @@ A documentação está na pasta [docs](docs/):
 - [Protótipo e fluxos de navegação — 03/11/2026](docs/prototipo-e-fluxos-de-navegacao.md)
 - [Registro de atividade — prototipação 03/11/2026](docs/registro-de-atividade-2026-11-03.md)
 - [Registro de atividade — primeira implementação Flutter 03/11/2026](docs/registro-de-atividade-primeiro-flutter-2026-11-03.md)
+- [Registro de decisão — autorização para uso de Flutter (13/11/2026)](docs/registro-de-decisao-flutter-2026-11-13.md)
 
 ## Tecnologia e escopo atual
 
 A proposta atual é desenvolver um aplicativo em Flutter. Uma versão web não faz parte do escopo neste momento; é apenas uma ideia para o futuro, ainda sem confirmação.
 
-Há uma diferença entre essa proposta e o Formulário 02 da FASEC, que descreve um sistema web e cita FastAPI e SQLAlchemy. Essa diferença precisa ser confirmada com o professor orientador antes da entrega final. Por enquanto, o planejamento do produto será voltado ao aplicativo Flutter, sem iniciar uma API ou uma versão web.
+A utilização do Flutter foi confirmada pelo professor orientador, conforme comunicação do estudante em 13/11/2026. A decisão está registrada em [Registro de decisão — autorização para uso de Flutter](docs/registro-de-decisao-flutter-2026-11-13.md). O aplicativo já foi executado no Chrome em ambiente local para validar a interface; essa execução de teste não define, por si só, a arquitetura final de dados ou a plataforma de entrega.
 
 ## Aplicativo Flutter
 
-O primeiro esqueleto de interface está na pasta [app_flutter](app_flutter/). Ele contém navegação inicial, tela de início, catálogo com busca e filtros, detalhes demonstrativos, histórico vazio e perfil reservado. Os dados ainda são fictícios e não existe persistência ou login nesta etapa. Consulte o [guia de início da implementação](docs/inicio-do-desenvolvimento-flutter.md) para preparar e executar o projeto no computador.
+O aplicativo em Flutter está na pasta [app_flutter](app_flutter/). A primeira versão foi executada localmente no Chrome em 13/11/2026, e o estudante confirmou o funcionamento da navegação principal e dos filtros do catálogo. Os livros continuam sendo dados demonstrativos; ainda não há persistência, login real, empréstimos ou sincronização. Consulte o [guia de início da implementação](docs/inicio-do-desenvolvimento-flutter.md) para preparar e executar o projeto no computador.
 
 ## Acompanhamento do projeto
 
@@ -45,9 +46,10 @@ O andamento das atividades está organizado no [Kanban do AcervoVivo](KANBAN.md)
 - [x] Registrar a primeira versão da análise de requisitos.
 - [x] Criar uma proposta inicial de modelagem do banco de dados.
 - [x] Registrar o planejamento inicial do aplicativo Flutter.
-- [ ] Confirmar com o professor a adequação da proposta Flutter ao Formulário 02.
+- [x] Confirmar com o professor a autorização para atualizar a proposta e utilizar Flutter (registro de 13/11/2026).
 - [ ] Validar os campos, relacionamentos e regras de negócio.
-- [ ] Criar o banco de dados na tecnologia aprovada.
+- [ ] Definir armazenamento e sincronização para compartilhar os dados entre dispositivos, se necessário.
+- [ ] Definir e criar o banco de dados após a decisão de arquitetura e sincronização.
 - [ ] Desenvolver as funcionalidades.
 - [ ] Testar o sistema e corrigir os problemas encontrados.
 
