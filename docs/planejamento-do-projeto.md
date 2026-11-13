@@ -122,4 +122,4 @@ Esses critérios são metas de trabalho para o projeto e ainda poderão ser ajus
 
 ## 10. Próxima atividade
 
-A próxima atividade será revisar o protótipo e resolver as decisões de escopo, acesso, armazenamento e regras de empréstimo. A proposta Flutter ainda precisa ser confirmada em relação ao Formulário 02. Depois dessas validações, o projeto poderá ser criado em Flutter e a implementação poderá começar com uma base alinhada aos requisitos.
+A autorização para utilizar Flutter foi comunicada pelo estudante em 13/11/2026 e está registrada em `docs/registro-de-decisao-flutter-2026-11-13.md`. A base Flutter já foi executada no Chrome e a navegação principal foi conferida. A próxima atividade é definir armazenamento e sincronização, perfis, permissões e regras de negócio antes de implementar persistência e operações reais.
