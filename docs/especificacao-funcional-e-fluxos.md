@@ -15,7 +15,7 @@ Este documento transforma os requisitos gerais do AcervoVivo em uma descrição 
 
 A finalidade é orientar a próxima etapa do projeto: finalizar o protótipo das telas e, depois das decisões técnicas e acadêmicas necessárias, iniciar a implementação.
 
-**Atenção ao escopo:** a proposta atual descrita nos documentos é um aplicativo Flutter. O Formulário 02 original do estágio descreve um sistema web com FastAPI e SQLAlchemy. Esta especificação não substitui nem altera a aprovação institucional. A plataforma final precisa permanecer de acordo com a orientação do professor e com o plano de estágio aceito.
+**Decisão de tecnologia:** o estudante informou em 13/11/2026 que o professor orientador autorizou a atualização da proposta para utilizar Flutter. O registro dessa decisão está em `docs/registro-de-decisao-flutter-2026-11-13.md`. A arquitetura de armazenamento, eventual API/backend e sincronização entre dispositivos continuam pendentes de definição.
 
 ## 2. Objetivo do produto
 
@@ -88,7 +88,7 @@ Os itens abaixo foram discutidos como possibilidades, mas ainda não fazem parte
 - notificações automáticas ou lembretes de devolução;
 - leitura ou download de livros em PDF;
 - identificação de exemplares por QR Code;
-- sincronização entre vários dispositivos ou unidades da biblioteca.
+- sincronização entre vários dispositivos ou unidades da biblioteca (a necessidade e a solução técnica ainda serão definidas na Issue #7).
 
 Essas ideias só deverão entrar na primeira versão se forem avaliadas, aprovadas e incluídas formalmente nos requisitos e no planejamento. A prioridade é concluir bem as funções essenciais.
 
@@ -460,4 +460,4 @@ Com esta especificação, o projeto passa a ter uma descrição mais detalhada d
 
 O documento também identifica decisões que não devem ser inventadas durante a programação. Elas precisam ser discutidas e registradas antes de serem transformadas em código.
 
-**Esta é uma versão de trabalho para revisão.** Ela não comprova que as telas, o banco de dados ou as funcionalidades já estejam implementados e não substitui a validação do professor orientador.
+**Esta é uma versão de trabalho para revisão.** A autorização para utilizar Flutter foi comunicada pelo estudante em 13/11/2026 e registrada em documento próprio. A especificação ainda depende da definição de autenticação, regras de empréstimo, modelo de exemplares e arquitetura de armazenamento; ela não comprova que banco de dados ou funcionalidades estejam implementados.
