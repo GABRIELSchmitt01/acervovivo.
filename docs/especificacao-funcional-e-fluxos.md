@@ -431,7 +431,7 @@ A sequência abaixo considera as dependências entre as funcionalidades.
 
 Antes de fechar a especificação para implementação, é necessário responder:
 
-- O professor confirmou que o produto poderá ser desenvolvido em Flutter, mesmo com o Formulário 02 descrevendo um sistema web?
+- A autorização para utilizar Flutter foi comunicada pelo estudante em 13/11/2026 e está registrada em `docs/registro-de-decisao-flutter-2026-11-13.md`.
 - O aplicativo será utilizado em apenas um dispositivo ou em vários dispositivos da biblioteca?
 - O armazenamento local será suficiente ou será necessário sincronizar os dados?
 - Como será feito o login e como serão separados os dois perfis?
