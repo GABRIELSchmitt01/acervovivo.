@@ -4,7 +4,7 @@
 >
 > **Público e cenário de uso:** sistema para bibliotecas em geral, com foco prioritário em escolas, faculdades e universidades. A primeira versão considera o controle de livros físicos, usuários, empréstimos e devoluções; não é uma plataforma de PDFs.
 >
-> **Atenção ao escopo:** o Formulário 02 descreve um sistema web com FastAPI e SQLAlchemy, enquanto a proposta atual está sendo preparada em Flutter. A confirmação do professor ainda está pendente na Issue #1. Não considere a tecnologia formalmente aprovada até essa orientação ser registrada.
+> **Decisão de escopo (13/11/2026):** o estudante informou que o professor orientador autorizou a atualização da proposta para utilizar Flutter. A decisão foi registrada em [docs/registro-de-decisao-flutter-2026-11-13.md](docs/registro-de-decisao-flutter-2026-11-13.md), e a Issue #1 foi encerrada. A arquitetura de dados e sincronização continua pendente na Issue #7.
 >
 > **Como usar:** cada item abaixo corresponde a uma Issue. Mova os cartões no GitHub Projects conforme o trabalho real avançar. Feche uma Issue apenas quando os critérios de conclusão forem atendidos. O arquivo `KANBAN.md` é um resumo documental; ele não altera automaticamente as colunas do quadro nativo do GitHub Projects.
 
@@ -26,13 +26,12 @@
 ## Em andamento
 
 - [ ] [#9 — Preparar e executar a primeira versão do aplicativo](https://github.com/GABRIELSchmitt01/acervovivo./issues/9)  
-  **Validação automática aprovada no GitHub Actions:** dependências instaladas, `flutter analyze` sem problemas e dois testes de widget aprovados ([execução](https://github.com/GABRIELSchmitt01/acervovivo./actions/runs/42975551993)). Ainda falta validar a execução nativa no Windows/Android do computador local.
+  **Validações realizadas:** GitHub Actions aprovou `flutter pub get`, `flutter analyze` e dois testes de widget ([execução](https://github.com/GABRIELSchmitt01/acervovivo./actions/runs/42975551993)); em 13/11/2026, o estudante executou o app no Chrome e confirmou a navegação principal e os filtros do catálogo. Ainda falta validar a execução nativa no Windows/Android.
 
 ## A fazer — decisões prioritárias
 
-Estas decisões devem ser resolvidas antes de fechar a arquitetura e implementar funcionalidades reais.
+Estas decisões devem ser resolvidas antes de fechar a arquitetura e implementar funcionalidades reais. A aprovação para utilizar Flutter já foi comunicada e registrada; a decisão técnica sobre armazenamento ainda está pendente.
 
-- [ ] [#1 — Confirmar proposta Flutter em relação ao Formulário 02](https://github.com/GABRIELSchmitt01/acervovivo./issues/1) — **prioridade máxima / bloqueador acadêmico**.
 - [ ] [#2 — Definir perfis, identificação, login e permissões](https://github.com/GABRIELSchmitt01/acervovivo./issues/2).
 - [ ] [#3 — Validar campos do cadastro de usuários](https://github.com/GABRIELSchmitt01/acervovivo./issues/3).
 - [ ] [#4 — Definir regras de empréstimo e devolução](https://github.com/GABRIELSchmitt01/acervovivo./issues/4).
@@ -63,9 +62,9 @@ A reserva é apenas uma possibilidade discutida. Não deve entrar na primeira ve
 
 ## Ordem recomendada de trabalho
 
-1. Resolver a confirmação do escopo com o professor (Issue #1).
-2. Executar e validar a base Flutter no computador (Issue #9).
-3. Definir armazenamento, sincronização, perfis e regras principais (Issues #2 a #7).
+1. Concluída a confirmação com o professor para utilizar Flutter (Issue #1; registro de 13/11/2026).
+2. Concluir a validação local da base Flutter nas plataformas-alvo (Issue #9).
+3. Definir armazenamento, sincronização, perfis e regras principais (Issues #2 a #7), priorizando a arquitetura da Issue #7.
 4. Implementar as interfaces Flutter do protótipo (Issue #19).
 5. Implementar persistência e operações de livros, usuários, empréstimos e histórico (Issues #10 a #14).
 6. Testar, corrigir e fechar a documentação para entrega (Issues #15, #16 e #18).
