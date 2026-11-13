@@ -7,7 +7,7 @@
 **Modalidade:** Projeto + Produto Computacional  
 **Estudante:** Gabriel Schmitt Maciel  
 **Professor orientador:** Prof. Lucas Dias  
-**Data da versão:** 20/10/2026
+**Data da versão:** 13/11/2026 — revisão após autorização do uso de Flutter
 
 ## 1. Introdução
 
@@ -146,17 +146,17 @@ A organização dos dados, a simplicidade da interface e a realização de teste
 
 ## 12. Tecnologia e arquitetura
 
-A proposta atual do produto é desenvolver um aplicativo em Flutter. Uma versão web não faz parte do escopo neste momento; é apenas uma possibilidade futura, ainda sem confirmação.
+A proposta aprovada pelo professor orientador, conforme confirmação comunicada pelo estudante em 13/11/2026, é desenvolver o AcervoVivo em Flutter. O registro da decisão está em `docs/registro-de-decisao-flutter-2026-11-13.md`.
 
-Existe uma diferença entre essa proposta e o Formulário 02 da FASEC, que descreve um sistema web e prevê o uso de FastAPI e SQLAlchemy no backend. Essa diferença precisa ser conversada com o professor orientador, para confirmar se a proposta Flutter pode ser usada ou se será necessário ajustar o plano aprovado.
+A aprovação da tecnologia de interface não define automaticamente a arquitetura de dados. Ainda será necessário decidir se o aplicativo utilizará armazenamento local, uma API/backend e/ou sincronização para permitir que diferentes dispositivos consultem as mesmas informações. Essa decisão está relacionada à Issue #7 e deverá ser tomada antes de implementar a persistência.
 
-Por enquanto, o planejamento do produto ficará voltado ao aplicativo Flutter. Não está previsto iniciar uma API ou desenvolver uma versão web nesta etapa.
+A execução inicial no Chrome foi realizada para validar a interface e a navegação. Isso não significa que o armazenamento, login ou as operações de biblioteca já estejam implementados.
 
 ## 13. Pontos para confirmar e validar
 
 Antes de avançar para a implementação, será necessário:
 
-- Confirmar com o professor se o aplicativo Flutter pode substituir o sistema web descrito no Formulário 02, ou se o plano precisará ser ajustado.
+- Definir a arquitetura de armazenamento e sincronização para o cenário de uso em um ou mais dispositivos.
 - Revisar os perfis de usuário e as permissões de cada um.
 - Confirmar quais campos serão usados no cadastro de usuários e quais serão obrigatórios.
 - Decidir como os usuários serão identificados para acessar o próprio histórico.
