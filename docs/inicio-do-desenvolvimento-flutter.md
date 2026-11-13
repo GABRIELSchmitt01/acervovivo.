@@ -2,7 +2,7 @@
 
 **Data:** 03/11/2026  
 **Etapa:** primeiro esqueleto de interface  
-**Situação:** código-fonte inicial registrado; geração dos arquivos nativos, execução e análise ainda pendentes.
+**Situação:** base Flutter criada e executada localmente no Chrome em 13/11/2026; a execução nativa para Windows/Android ainda depende da configuração das ferramentas correspondentes.
 
 ## 1. Objetivo
 
@@ -94,7 +94,7 @@ A geração dos arquivos nativos e a execução precisam ser feitas no computado
 
 Antes de adicionar banco de dados ou login, confirmar:
 
-- se a proposta Flutter foi formalmente aceita em relação ao Formulário 02 do estágio;
+- a autorização para utilizar Flutter foi comunicada pelo estudante em 13/11/2026 e está registrada em `docs/registro-de-decisao-flutter-2026-11-13.md`;
 - se a biblioteca utilizará um dispositivo administrativo ou vários dispositivos;
 - se os alunos consultarão os livros em seus próprios celulares;
 - se será necessário armazenamento centralizado e sincronização;
@@ -102,4 +102,4 @@ Antes de adicionar banco de dados ou login, confirmar:
 
 ## 7. Resultado desta etapa
 
-Foi criado e registrado um esqueleto inicial de aplicativo Flutter com navegação e telas de consulta demonstrativas. O próximo passo é gerar as plataformas, executar o app no computador, analisar e corrigir eventuais erros e depois fechar a arquitetura dos dados antes de implementar as operações reais.
+Foi criado e registrado um esqueleto inicial de aplicativo Flutter com navegação e telas de consulta demonstrativas. O aplicativo foi executado no Chrome e a navegação principal foi conferida pelo estudante em 13/11/2026. O próximo passo é definir a arquitetura dos dados e, em paralelo, concluir a configuração necessária para executar a versão nativa nas plataformas-alvo.
