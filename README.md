@@ -25,12 +25,17 @@ A documentação está na pasta [docs](docs/):
 - [Registro de atividade — prototipação 03/11/2026](docs/registro-de-atividade-2026-11-03.md)
 - [Registro de atividade — primeira implementação Flutter 03/11/2026](docs/registro-de-atividade-primeiro-flutter-2026-11-03.md)
 - [Registro de decisão — autorização para uso de Flutter (13/11/2026)](docs/registro-de-decisao-flutter-2026-11-13.md)
+- [Preparação para publicação na Google Play](docs/publicacao-google-play.md)
 
 ## Tecnologia e escopo atual
 
 A proposta atual é desenvolver um aplicativo em Flutter. Uma versão web não faz parte do escopo neste momento; é apenas uma ideia para o futuro, ainda sem confirmação.
 
 A utilização do Flutter foi confirmada pelo professor orientador, conforme comunicação do estudante em 13/11/2026. A decisão está registrada em [Registro de decisão — autorização para uso de Flutter](docs/registro-de-decisao-flutter-2026-11-13.md). O aplicativo já foi executado no Chrome em ambiente local para validar a interface; essa execução de teste não define, por si só, a arquitetura final de dados ou a plataforma de entrega.
+
+## Publicação Android
+
+O planejamento de preparação para a Google Play está em [docs/publicacao-google-play.md](docs/publicacao-google-play.md). A primeira etapa de geração da plataforma Android pode ser executada com o script [scripts/preparar-android.ps1](scripts/preparar-android.ps1). A publicação ainda depende das funcionalidades reais, backend, testes, assinatura e declarações da Play Console.
 
 ## Aplicativo Flutter
 
