@@ -56,3 +56,18 @@ Os livros presentes em `lib/data/sample_books.dart` são exemplos fictícios par
 ## Próxima etapa técnica
 
 Antes de conectar um banco de dados, será necessário confirmar com o professor e com o cenário de uso se a biblioteca terá um único dispositivo ou vários dispositivos compartilhados. Essa decisão define se o armazenamento local é suficiente ou se será necessário um serviço sincronizado.
+
+
+## Preparação Android / Google Play
+
+O projeto está sendo preparado para distribuição somente no Android. A pasta `android/` é gerada no computador com o Flutter SDK instalado, usando o script na raiz do repositório:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\preparar-android.ps1
+```
+
+O script usa como Application ID sugerido `com.gabrielschmitt.acervovivo`, configura o target API 36, define o rótulo AcervoVivo e protege arquivos locais de assinatura contra inclusão acidental no Git. O Application ID ainda deve ser confirmado antes do registro definitivo na Play Console.
+
+Consulte [docs/publicacao-google-play.md](../docs/publicacao-google-play.md) para ver os passos, limitações, assinatura, testes e requisitos da loja.
+
+A estrutura gerada ainda precisa ser compilada e testada em Android. A interface atual continua usando dados demonstrativos e não representa uma versão funcional pronta para publicação.
