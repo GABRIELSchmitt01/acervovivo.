@@ -151,7 +151,8 @@ finally {
 ) {
     throw "Invalid Application ID. Use reverse-domain form, for example com.company.acervovivo."
 }
-$Organization = ($ApplicationId.Split('.') | Select-Object -SkipLast 1) -join '.'
+$lastDot = $ApplicationId.LastIndexOf('.')
+$Organization = $ApplicationId.Substring(0, $lastDot)
 $TargetApi = 36
 $NewLine = [Environment]::NewLine
 
