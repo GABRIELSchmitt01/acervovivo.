@@ -9,7 +9,7 @@ $ProjectName = "acervovivo"
 $TargetApi = 36
 $NewLine = [Environment]::NewLine
 
-$segments = $ApplicationId.Split(".")
+$segments = $ApplicationId -split '\.'
 if ($segments.Length -lt 2) {
     throw "Invalid Application ID. Use reverse-domain form, for example com.company.acervovivo."
 }
@@ -88,9 +88,9 @@ try {
     }
 
     $gradle = Get-Content -Raw -Encoding UTF8 $gradlePath
-    $gradle = Replace-ExactlyOne -Text $gradle -Pattern '(?m)^(\s*)namespace\s*=\s*".*?"\s*$' -Replacement ('$1namespace = "' + $ApplicationId + '"') -Description "namespace"
-    $gradle = Replace-ExactlyOne -Text $gradle -Pattern '(?m)^(\s*)applicationId\s*=\s*".*?"\s*$' -Replacement ('$1applicationId = "' + $ApplicationId + '"') -Description "applicationId"
-    $gradle = Replace-ExactlyOne -Text $gradle -Pattern '(?m)^(\s*)targetSdk\s*=\s*.*$' -Replacement ('$1targetSdk = ' + $TargetApi) -Description "targetSdk"
+    $gradle = Replace-ExactlyOne -Text $gradle -Pattern '(?m)^([ \t]*)namespace\s*=\s*".*?"\s*$' -Replacement ('$1namespace = "' + $ApplicationId + '"') -Description "namespace"
+    $gradle = Replace-ExactlyOne -Text $gradle -Pattern '(?m)^([ \t]*)applicationId\s*=\s*".*?"\s*$' -Replacement ('$1applicationId = "' + $ApplicationId + '"') -Description "applicationId"
+    $gradle = Replace-ExactlyOne -Text $gradle -Pattern '(?m)^([ \t]*)targetSdk\s*=\s*.*$' -Replacement ('$1targetSdk = ' + $TargetApi) -Description "targetSdk"
     Set-Content -Path $gradlePath -Value $gradle -Encoding UTF8
 
     $manifestPath = Join-Path $appDirectory "android/app/src/main/AndroidManifest.xml"
