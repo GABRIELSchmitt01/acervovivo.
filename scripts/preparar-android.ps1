@@ -75,7 +75,7 @@ try {
     $gradle = Get-Content -Raw -Encoding UTF8 $gradlePath
     $gradle = Replace-ExactlyOne -Text $gradle -Pattern '(?m)^(\s*)namespace\s*=\s*".*?"\s*$' -Replacement ('$1namespace = "' + $ApplicationId + '"') -Description "namespace"
     $gradle = Replace-ExactlyOne -Text $gradle -Pattern '(?m)^(\s*)applicationId\s*=\s*".*?"\s*$' -Replacement ('$1applicationId = "' + $ApplicationId + '"') -Description "applicationId"
-    $gradle = Replace-ExactlyOne -Text $gradle -Pattern '(?m)^(\s*)compileSdk\s*=\s*.*$' -Replacement ('$1compileSdk = ' + $TargetApi) -Description "compileSdk"
+    # Keep compileSdk managed by the installed Flutter SDK; enforce the Play target API separately.
     $gradle = Replace-ExactlyOne -Text $gradle -Pattern '(?m)^(\s*)targetSdk\s*=\s*.*$' -Replacement ('$1targetSdk = ' + $TargetApi) -Description "targetSdk"
     Set-Content -Path $gradlePath -Value $gradle -Encoding UTF8
 
@@ -132,7 +132,7 @@ try {
     Write-Host ""
     Write-Host "Android project prepared." -ForegroundColor Green
     Write-Host "Application ID: $ApplicationId"
-    Write-Host "compileSdk / targetSdk: $TargetApi"
+    Write-Host "targetSdk: $TargetApi (compileSdk remains managed by Flutter)"
     Write-Host "App label: AcervoVivo"
     Write-Host "Internet permission: declared"
     Write-Host "Launcher icon: Flutter default icon remains in place for now."
