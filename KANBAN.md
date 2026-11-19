@@ -39,6 +39,10 @@ Estas decisões devem ser resolvidas antes de fechar a arquitetura e implementar
 - [ ] [#6 — Definir regra para exclusão de livros com empréstimos](https://github.com/GABRIELSchmitt01/acervovivo./issues/6).
 - [ ] [#7 — Escolher armazenamento e necessidade de sincronização](https://github.com/GABRIELSchmitt01/acervovivo./issues/7) — **prioridade alta**, especialmente se diferentes dispositivos precisarem compartilhar os mesmos dados.
 
+## Em andamento — preparação Android
+
+- [ ] [#20 — Preparar aplicativo para distribuição na Google Play](https://github.com/GABRIELSchmitt01/acervovivo./issues/20) — estrutura Android gerada localmente pelo script, instalação do SDK, compilação de teste, adaptação visual, assinatura e publicação futura. Consulte [docs/publicacao-google-play.md](docs/publicacao-google-play.md).
+
 ## A fazer — implementação
 
 - [ ] [#19 — Implementar no Flutter as telas do protótipo Figma](https://github.com/GABRIELSchmitt01/acervovivo./issues/19) — próxima etapa de interface após validar a base da Issue #9. O escopo é visual e de navegação; não inclui persistência ou autenticação real.
@@ -70,6 +74,9 @@ A reserva é apenas uma possibilidade discutida. Não deve entrar na primeira ve
 6. Testar, corrigir e fechar a documentação para entrega (Issues #15, #16 e #18).
 
 ## Referências
+
+- [Preparação Google Play (Android)](docs/publicacao-google-play.md)
+- [Script de preparação da plataforma Android](scripts/preparar-android.ps1)
 
 - [Roteiro de validação local Flutter](docs/validacao-local-flutter.md)
 - [Workflow de análise e testes](https://github.com/GABRIELSchmitt01/acervovivo./blob/main/.github/workflows/flutter.yml)
