@@ -127,6 +127,7 @@ Crie um backup antes de atualizações:
 
 ```bash
 cd /opt/acervovivo/backend
+set -a; . ./.env; set +a
 mkdir -p backups
 docker compose exec -T db pg_dump -U "$POSTGRES_USER" "$POSTGRES_DB" > "backups/acervovivo-$(date +%F-%H%M).sql"
 ```
