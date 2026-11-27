@@ -14,7 +14,7 @@ class _CatalogScreenState extends State<CatalogScreen>{
   final _search=TextEditingController();
   List<Book> _books=[];
   bool _loading=true; String? _error; String _category='Todos';
-  List<String> get _categories=>['Todos',..._books.map((b)=>b.category).where((x)=>x.isNotEmpty).toSet().toList()..sort()];
+  List<String> get _categories { final cats=_books.map((b)=>b.category).where((x)=>x.isNotEmpty).toSet().toList()..sort(); return ['Todos',...cats]; }
   List<Book> get _filtered{
     final q=_search.text.trim().toLowerCase();
     return _books.where((b)=>(q.isEmpty||b.title.toLowerCase().contains(q)||b.author.toLowerCase().contains(q))&&(_category=='Todos'||b.category==_category)).toList();
