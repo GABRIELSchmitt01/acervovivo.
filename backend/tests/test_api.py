@@ -35,7 +35,7 @@ def test_librarian_can_create_book_reader_and_process_loan(client):
     assert book_response.status_code == 201, book_response.text
     book_id = book_response.json()["id"]
 
-    reader_email = f"reader-{suffix}@example.test"
+    reader_email = f"reader-{suffix}@example.com"
     reader_password = "Test-password-123"
     reader_response = client.post("/users", headers=admin, json={
         "name": "Leitor de teste", "email": reader_email, "password": reader_password,
@@ -73,7 +73,7 @@ def test_reader_cannot_create_book(client):
     admin_token = token_for(client, ADMIN_EMAIL, ADMIN_PASSWORD)
     suffix = uuid.uuid4().hex[:10]
     reader = client.post("/users", headers={"Authorization": f"Bearer {admin_token}"}, json={
-        "name": "Leitor sem permissão", "email": f"{suffix}@example.test",
+        "name": "Leitor sem permissão", "email": f"{suffix}@example.com",
         "password": "Test-password-123", "role": "reader"
     })
     assert reader.status_code == 201
