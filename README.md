@@ -37,9 +37,11 @@ A utilização do Flutter foi confirmada pelo professor orientador, conforme com
 
 O planejamento de preparação para a Google Play está em [docs/publicacao-google-play.md](docs/publicacao-google-play.md). A primeira etapa de geração da plataforma Android pode ser executada com o script [scripts/preparar-android.ps1](scripts/preparar-android.ps1). A publicação ainda depende das funcionalidades reais, backend, testes, assinatura e declarações da Play Console.
 
-## Aplicativo Flutter
+## Aplicativo Flutter e backend
 
-O aplicativo em Flutter está na pasta [app_flutter](app_flutter/). A primeira versão foi executada localmente no Chrome em 13/11/2026, e o estudante confirmou o funcionamento da navegação principal e dos filtros do catálogo. Os livros continuam sendo dados demonstrativos; ainda não há persistência, login real, empréstimos ou sincronização. Consulte o [guia de início da implementação](docs/inicio-do-desenvolvimento-flutter.md) para preparar e executar o projeto no computador.
+O aplicativo Flutter está na pasta [app_flutter](app_flutter/). A implementação do backend está em [backend](backend/), com FastAPI e PostgreSQL em Docker Compose. A branch de implementação adiciona tela de login, catálogo conectado ao banco compartilhado, histórico do leitor e painel do bibliotecário para livros, leitores, empréstimos e devoluções. Essas alterações estão no Pull Request #21 e aguardam validação dos checks antes de serem integradas à branch principal.
+
+O guia de implantação está em [backend/DEPLOY_HOSTINGER.md](backend/DEPLOY_HOSTINGER.md).
 
 ## Acompanhamento do projeto
 
@@ -53,9 +55,10 @@ O andamento das atividades está organizado no [Kanban do AcervoVivo](KANBAN.md)
 - [x] Registrar o planejamento inicial do aplicativo Flutter.
 - [x] Confirmar com o professor a autorização para atualizar a proposta e utilizar Flutter (registro de 13/11/2026).
 - [ ] Validar os campos, relacionamentos e regras de negócio.
-- [ ] Definir armazenamento e sincronização para compartilhar os dados entre dispositivos, se necessário.
-- [ ] Definir e criar o banco de dados após a decisão de arquitetura e sincronização.
-- [ ] Desenvolver as funcionalidades.
-- [ ] Testar o sistema e corrigir os problemas encontrados.
+- [x] Definir arquitetura de dados compartilhados com PostgreSQL e API.
+- [x] Implementar estrutura inicial de banco, autenticação e rotas de catálogo/circulação.
+- [x] Implementar telas Flutter de login e painel do bibliotecário na branch de trabalho.
+- [ ] Validar CI, executar testes de integração e corrigir os problemas encontrados.
+- [ ] Implantar na VPS, configurar domínio/HTTPS e testar com dispositivos reais.
 
 > Este repositório está em fase inicial. A documentação registra o planejamento; as funcionalidades ainda precisam ser implementadas e testadas.
