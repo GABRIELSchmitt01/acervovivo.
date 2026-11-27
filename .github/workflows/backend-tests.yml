@@ -33,7 +33,7 @@ jobs:
       DATABASE_URL: postgresql+psycopg://test:test@localhost:5432/acervovivo_test
       APP_SECRET_KEY: github-actions-test-secret-key-at-least-32-characters-long
       BOOTSTRAP_LIBRARIAN_NAME: Test Admin
-      BOOTSTRAP_LIBRARIAN_EMAIL: admin@example.test
+      BOOTSTRAP_LIBRARIAN_EMAIL: admin@example.com
       BOOTSTRAP_LIBRARIAN_PASSWORD: Test-admin-password-123
     steps:
       - uses: actions/checkout@v4
