@@ -19,6 +19,7 @@ SessionLocal=sessionmaker(bind=engine,autoflush=False,expire_on_commit=False)
 class Base(DeclarativeBase): pass
 class User(Base):
     __tablename__="users"
+    __table_args__=(CheckConstraint("role IN ('reader', 'librarian')",name="ck_users_role"),)
     id:Mapped[int]=mapped_column(Integer,primary_key=True)
     name:Mapped[str]=mapped_column(String(140),nullable=False)
     email:Mapped[str]=mapped_column(String(254),unique=True,index=True,nullable=False)
@@ -30,7 +31,7 @@ class User(Base):
     created_at:Mapped[datetime]=mapped_column(DateTime(timezone=True),server_default=func.now(),nullable=False)
 class Book(Base):
     __tablename__="books"
-    __table_args__=(CheckConstraint("total_copies >= 0",name="ck_books_total_copies"),)
+    __table_args__=(CheckConstraint("total_copies >= 0",name="ck_books_total_copies"),CheckConstraint("publication_year IS NULL OR (publication_year >= 0 AND publication_year <= 2100)",name="ck_books_publication_year"),)
     id:Mapped[int]=mapped_column(Integer,primary_key=True)
     title:Mapped[str]=mapped_column(String(240),index=True,nullable=False)
     author:Mapped[str]=mapped_column(String(240),nullable=False)
