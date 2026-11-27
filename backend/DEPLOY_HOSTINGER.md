@@ -9,9 +9,8 @@ Entre na VPS por SSH ou no Console da Hostinger e execute:
 ```bash
 apt update
 apt install -y git nginx certbot python3-certbot-nginx
-mkdir -p /opt/acervovivo
 cd /opt
-git clone https://github.com/GABRIELSchmitt01/acervovivo..git
+git clone https://github.com/GABRIELSchmitt01/acervovivo..git acervovivo
 cd /opt/acervovivo
 git checkout feature/backend-postgres-api
 cd backend
