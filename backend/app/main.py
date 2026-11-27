@@ -6,7 +6,7 @@ from fastapi import Depends, FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from pydantic import BaseModel, ConfigDict, EmailStr, Field
-from sqlalchemy import Boolean, Date, DateTime, ForeignKey, Integer, String, Text, create_engine, func, select
+from sqlalchemy import Boolean, CheckConstraint, Date, DateTime, ForeignKey, Integer, String, Text, create_engine, func, select
 from sqlalchemy.orm import DeclarativeBase, Mapped, Session, mapped_column, sessionmaker
 
 DATABASE_URL=os.getenv("DATABASE_URL","postgresql+psycopg://acervovivo:CHANGE_ME@db:5432/acervovivo")
@@ -30,10 +30,11 @@ class User(Base):
     created_at:Mapped[datetime]=mapped_column(DateTime(timezone=True),server_default=func.now(),nullable=False)
 class Book(Base):
     __tablename__="books"
+    __table_args__=(CheckConstraint("total_copies >= 0",name="ck_books_total_copies"),)
     id:Mapped[int]=mapped_column(Integer,primary_key=True)
     title:Mapped[str]=mapped_column(String(240),index=True,nullable=False)
     author:Mapped[str]=mapped_column(String(240),nullable=False)
-    isbn:Mapped[str|None]=mapped_column(String(20),index=True)
+    isbn:Mapped[str|None]=mapped_column(String(20),unique=True,index=True)
     category:Mapped[str|None]=mapped_column(String(100),index=True)
     publication_year:Mapped[int|None]=mapped_column(Integer)
     total_copies:Mapped[int]=mapped_column(Integer,default=1,nullable=False)
@@ -42,6 +43,7 @@ class Book(Base):
     created_at:Mapped[datetime]=mapped_column(DateTime(timezone=True),server_default=func.now(),nullable=False)
 class Loan(Base):
     __tablename__="loans"
+    __table_args__=(CheckConstraint("due_date >= loan_date",name="ck_loans_due_after_loan"),CheckConstraint("returned_at IS NULL OR returned_at >= loan_date",name="ck_loans_return_after_loan"))
     id:Mapped[int]=mapped_column(Integer,primary_key=True)
     book_id:Mapped[int]=mapped_column(ForeignKey("books.id",ondelete="RESTRICT"),index=True,nullable=False)
     user_id:Mapped[int]=mapped_column(ForeignKey("users.id",ondelete="RESTRICT"),index=True,nullable=False)
