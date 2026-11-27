@@ -64,6 +64,9 @@ class UserOut(BaseModel):
     id:int; name:str; email:EmailStr; phone:str|None; registration_code:str|None; role:str; active:bool
 class LoginIn(BaseModel):
     email:EmailStr; password:str
+class PasswordChange(BaseModel):
+    current_password:str
+    new_password:str=Field(min_length=10,max_length=128)
 class BookCreate(BaseModel):
     title:str=Field(min_length=1,max_length=240)
     author:str=Field(min_length=1,max_length=240)
@@ -143,6 +146,12 @@ def login(data:LoginIn,db:Db):
     return {"access_token":token_for(user),"token_type":"bearer","expires_in":TOKEN_TTL,"user":UserOut.model_validate(user)}
 @app.get("/auth/me",response_model=UserOut)
 def me(user:Current): return user
+@app.post("/auth/change-password")
+def change_password(data:PasswordChange,db:Db,user:Current):
+    if not verify_password(data.current_password,user.password_hash): raise HTTPException(400,"Senha atual incorreta.")
+    user.password_hash=hash_password(data.new_password)
+    db.commit()
+    return {"status":"ok"}
 
 @app.get("/books",response_model=list[BookAvailability])
 def books(db:Db,q:str|None=Query(default=None,max_length=120),category:str|None=None,limit:int=Query(default=100,ge=1,le=300),offset:int=Query(default=0,ge=0)):
