@@ -12,7 +12,7 @@ apt install -y git nginx certbot python3-certbot-nginx
 cd /opt
 git clone https://github.com/GABRIELSchmitt01/acervovivo..git acervovivo
 cd /opt/acervovivo
-git checkout feature/backend-postgres-api
+git checkout main
 cd backend
 ```
 
