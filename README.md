@@ -39,7 +39,7 @@ O planejamento de preparação para a Google Play está em [docs/publicacao-goog
 
 ## Aplicativo Flutter e backend
 
-O aplicativo Flutter está na pasta [app_flutter](app_flutter/). A implementação do backend está em [backend](backend/), com FastAPI e PostgreSQL em Docker Compose. A branch de implementação adiciona tela de login, catálogo conectado ao banco compartilhado, histórico do leitor e painel do bibliotecário para livros, leitores, empréstimos e devoluções. Essas alterações estão no Pull Request #21 e aguardam validação dos checks antes de serem integradas à branch principal.
+O aplicativo Flutter está na pasta [app_flutter](app_flutter/). A implementação do backend está em [backend](backend/), com FastAPI e PostgreSQL em Docker Compose. A implementação integrada à branch principal inclui tela de login obrigatória, catálogo conectado ao banco compartilhado, histórico do leitor e painel do bibliotecário para livros, leitores, empréstimos e devoluções. O Pull Request #21 foi integrado após os checks do Flutter e do backend passarem.
 
 O guia de implantação está em [backend/DEPLOY_HOSTINGER.md](backend/DEPLOY_HOSTINGER.md).
 
