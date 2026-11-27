@@ -14,9 +14,20 @@ Inclui criação inicial de tabelas, bibliotecário inicial por variáveis de am
 
 A porta do PostgreSQL não é publicada; o banco fica na rede interna do Docker. O serviço API é publicado apenas em localhost na porta 8000 para ser colocado atrás de HTTPS.
 
+## Testes automatizados
+
+Na pasta `backend`, com PostgreSQL disponível e variáveis de ambiente de teste configuradas:
+
+```bash
+pip install -r requirements-dev.txt
+pytest -q
+```
+
+O workflow do GitHub Actions executa esses testes com um PostgreSQL temporário.
+
 ## Endpoints
 - `GET /health`
-- `POST /auth/login`, `GET /auth/me`
+- `POST /auth/login`, `GET /auth/me`, `POST /auth/change-password`
 - `GET /books`, `GET /books/{id}`, `POST/PUT/DELETE /books`
 - `POST /users`, `GET /users`
 - `POST /loans`, `POST /loans/{id}/return`, `GET /loans`
