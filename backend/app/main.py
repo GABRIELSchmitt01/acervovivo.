@@ -89,8 +89,7 @@ def get_db():
 Db=Annotated[Session,Depends(get_db)]
 def hash_password(password:str)->str:
     salt=secrets.token_bytes(16); digest=hashlib.pbkdf2_hmac("sha256",password.encode(),salt,310000)
-    return f"pbkdf2_sha256$310000$\u007b{salt.hex()}\u007d$\u007b{digest.hex()}\u007d".replace("\\u007b","{").replace("\\u007d","}")
-def verify_password(password:str,encoded:str)->bool:
+    return "pbkdf2_sha256$310000$" + salt.hex() + "$" + digest.hex()
     try:
         scheme,rounds,salt,digest=encoded.split("$")
         if scheme!="pbkdf2_sha256": return False
